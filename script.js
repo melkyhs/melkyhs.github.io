@@ -113,10 +113,10 @@ fadeElements.forEach(el => observer.observe(el));
 const typingText = document.getElementById('typing-text');
 const roles = [
   'Backend Engineer',
-  'Pelestari Warisan Digital',
+  'Heritage Digitizer',
   'Card Game Collector',
   'Public Systems Builder',
-  'Manga Enthusiast'
+  'Anime Fan'
 ];
 
 let roleIndex = 0;
@@ -152,7 +152,7 @@ function type() {
 setTimeout(type, 800);
 
 // ===== SMOOTH HOVER TILT FOR CARDS =====
-document.querySelectorAll('.timeline-card, .skill-category, .about-card').forEach(card => {
+document.querySelectorAll('.timeline-card, .skill-category').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
@@ -185,3 +185,93 @@ document.querySelectorAll('.interest-card[data-accent]').forEach(card => {
   const icon = card.querySelector('.interest-icon');
   if (icon) icon.style.color = color;
 });
+
+// ===== HERO MOUSE PARALLAX =====
+const heroSection = document.querySelector('.hero');
+const parallaxEls = heroSection
+  ? heroSection.querySelectorAll('[data-parallax]')
+  : [];
+
+if (heroSection && parallaxEls.length > 0) {
+  let rafId = null;
+  let targetX = 0, targetY = 0;
+  let currentX = 0, currentY = 0;
+
+  heroSection.addEventListener('mousemove', (e) => {
+    const rect = heroSection.getBoundingClientRect();
+    targetX = (e.clientX - rect.left) / rect.width - 0.5;
+    targetY = (e.clientY - rect.top) / rect.height - 0.5;
+    if (!rafId) rafId = requestAnimationFrame(animateParallax);
+  });
+
+  heroSection.addEventListener('mouseleave', () => {
+    targetX = 0;
+    targetY = 0;
+    if (!rafId) rafId = requestAnimationFrame(animateParallax);
+  });
+
+  function animateParallax() {
+    currentX += (targetX - currentX) * 0.08;
+    currentY += (targetY - currentY) * 0.08;
+    parallaxEls.forEach(el => {
+      const depth = parseFloat(el.dataset.parallax) || 0.02;
+      el.style.transform = `translate(${currentX * depth * 120}px, ${currentY * depth * 120}px)`;
+    });
+    if (Math.abs(targetX - currentX) > 0.0005 || Math.abs(targetY - currentY) > 0.0005) {
+      rafId = requestAnimationFrame(animateParallax);
+    } else {
+      rafId = null;
+    }
+  }
+}
+
+// ===== STAT COUNTER ANIMATION =====
+function animateCounter(el, target, suffix, duration) {
+  const startTime = performance.now();
+  function tick(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(eased * target) + suffix;
+    if (progress < 1) requestAnimationFrame(tick);
+    else el.textContent = target + suffix;
+  }
+  requestAnimationFrame(tick);
+}
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.hero-stat-card').forEach(card => {
+      const numEl = card.querySelector('.stat-number');
+      if (!numEl) return;
+      const raw = numEl.textContent.trim();
+      const suffix = raw.replace(/[0-9]/g, '');
+      const target = parseInt(raw, 10);
+      if (!isNaN(target)) animateCounter(numEl, target, suffix, 1400);
+    });
+  }, 700);
+});
+
+// ===== ABOUT TERMINAL LINE REVEAL =====
+const aboutTerminal = document.querySelector('.about-terminal');
+if (aboutTerminal) {
+  const termLines = aboutTerminal.querySelectorAll(
+    '.terminal-line, .terminal-output, .terminal-output-plain, .terminal-cursor-line'
+  );
+  termLines.forEach(line => { line.style.opacity = '0'; });
+
+  const termObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.dataset.revealed) {
+        entry.target.dataset.revealed = '1';
+        termLines.forEach((line, i) => {
+          setTimeout(() => {
+            line.style.transition = 'opacity 0.3s ease';
+            line.style.opacity = '1';
+          }, i * 220 + 150);
+        });
+      }
+    });
+  }, { threshold: 0.35 });
+
+  termObserver.observe(aboutTerminal);
+}

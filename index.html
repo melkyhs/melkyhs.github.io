@@ -51,17 +51,23 @@
   <!-- ===== HERO ===== -->
   <section id="home" class="hero">
     <div class="hero-bg">
-      <div class="hero-dots"></div>
-      <div class="hero-blob hero-blob-1"></div>
-      <div class="hero-blob hero-blob-2"></div>
-      <div class="hero-blob hero-blob-3"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-scan-line"></div>
+      <div class="hero-corner hero-corner-tl"></div>
+      <div class="hero-corner hero-corner-br"></div>
     </div>
 
     <div class="hero-content">
-      <div class="hero-text">
+      <div class="hero-text" data-parallax="0.025">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-prompt">$</span>
+          <span class="hero-eyebrow-cmd">init</span>
+          <span class="hero-eyebrow-arg">melky_hermansyah</span>
+        </div>
+
         <div class="hero-badge">
           <span class="dot"></span>
-          Koding · Budaya · Banjarmasin
+          Backend · History · Banjarmasin
         </div>
 
         <h1 class="hero-title">
@@ -108,9 +114,11 @@
         </div>
       </div>
 
-      <div class="hero-image-wrap">
-        <div class="hero-avatar-ring"></div>
-        <div class="hero-avatar-border"></div>
+      <div class="hero-image-wrap" data-parallax="0.045">
+        <div class="hero-frame-corner hero-frame-tl"></div>
+        <div class="hero-frame-corner hero-frame-tr"></div>
+        <div class="hero-frame-corner hero-frame-bl"></div>
+        <div class="hero-frame-corner hero-frame-br"></div>
         <div class="hero-avatar photo">
           <img
             src="assets/photo.png"
@@ -128,6 +136,11 @@
         </div>
       </div>
     </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="hero-scroll-text">scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
   </section>
 
   <div class="section-divider"></div>
@@ -137,16 +150,19 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text fade-up">
-          <span class="section-label">About Me</span>
-          <h2 class="section-title">Building Systems That <span class="gradient-text">Matter</span></h2>
+          <div class="section-header">
+            <span class="section-num-bg" aria-hidden="true">01</span>
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Building Systems That <span class="gradient-text">Matter</span></h2>
+          </div>
           <p>
-            I'm <strong>Melky Hermansyah</strong>, a Computer Science graduate (S.Kom) from Universitas Lambung Mangkurat, currently serving as a Staff at <strong>Disbudporapar Kota Banjarmasin</strong> — the Department of Culture, Youth, Sports, and Tourism.
+            I'm <strong>Melky Hermansyah</strong>, a Computer Science graduate (S.Kom) from Universitas Lambung Mangkurat, currently working as Staff at <strong>Disbudporapar Kota Banjarmasin</strong>, the city's department for culture, youth, sports, and tourism.
           </p>
           <p>
-            My professional focus lies at the intersection of <strong>backend engineering</strong>, <strong>public administration systems</strong>, and the <strong>digital preservation of historical records</strong>. I am passionate about leveraging technology to modernize government operations and make cultural heritage accessible to the public.
+            Most of my work is backend engineering: building systems for government offices and helping digitize historical records that used to just sit in old file cabinets. It's the kind of work that directly affects how public services run, which I find more meaningful than most.
           </p>
           <p>
-            I approach every challenge with structure, a problem-solving mindset, and clear communication — turning complex requirements into efficient, maintainable systems.
+            I care a lot about clean, logical systems. If the data model doesn't make sense or the logic is convoluted, I'll fix it before moving on. Maintainable code saves everyone time later.
           </p>
 
           <div class="about-highlights">
@@ -174,21 +190,44 @@
           </div>
         </div>
 
-        <div class="about-cards fade-up fade-up-delay-2">
-          <div class="about-card">
-            <div class="about-card-icon"><i class="fas fa-server"></i></div>
-            <h4>Backend Engineering</h4>
-            <p>Designing robust server-side architectures and RESTful APIs with Node.js, TypeScript, and PHP for real-world applications.</p>
+        <div class="about-terminal fade-up fade-up-delay-2">
+          <div class="terminal-chrome">
+            <div class="terminal-dots">
+              <span class="t-dot t-dot-red"></span>
+              <span class="t-dot t-dot-yellow"></span>
+              <span class="t-dot t-dot-green"></span>
+            </div>
+            <span class="terminal-title">melky@disbudporapar — zsh</span>
           </div>
-          <div class="about-card">
-            <div class="about-card-icon"><i class="fas fa-building-columns"></i></div>
-            <h4>Public Systems</h4>
-            <p>Managing and digitizing administrative and historical information for government institutions.</p>
-          </div>
-          <div class="about-card">
-            <div class="about-card-icon"><i class="fas fa-chart-bar"></i></div>
-            <h4>Data &amp; Analytics</h4>
-            <p>PostgreSQL, MySQL, and SQLite expertise for complex data modeling and reporting workflows.</p>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="t-prompt">~</span>
+              <span class="t-cmd">$ cat</span>
+              <span class="t-arg">profile.json</span>
+            </div>
+            <pre class="terminal-output"><span class="t-brace">{</span>
+  <span class="t-key">"name"</span><span class="t-colon">:</span>     <span class="t-string">"Melky Hermansyah"</span><span class="t-colon">,</span>
+  <span class="t-key">"role"</span><span class="t-colon">:</span>     <span class="t-string">"Backend Engineer"</span><span class="t-colon">,</span>
+  <span class="t-key">"org"</span><span class="t-colon">:</span>      <span class="t-string">"Disbudporapar Banjarmasin"</span><span class="t-colon">,</span>
+  <span class="t-key">"degree"</span><span class="t-colon">:</span>   <span class="t-string">"S.Kom — ULM"</span><span class="t-colon">,</span>
+  <span class="t-key">"stack"</span><span class="t-colon">:</span>    <span class="t-bracket">[</span><span class="t-string">"Node.js"</span><span class="t-colon">,</span> <span class="t-string">"TypeScript"</span><span class="t-colon">,</span> <span class="t-string">"PHP"</span><span class="t-bracket">]</span><span class="t-colon">,</span>
+  <span class="t-key">"db"</span><span class="t-colon">:</span>       <span class="t-bracket">[</span><span class="t-string">"PostgreSQL"</span><span class="t-colon">,</span> <span class="t-string">"MySQL"</span><span class="t-bracket">]</span><span class="t-colon">,</span>
+  <span class="t-key">"focus"</span><span class="t-colon">:</span>    <span class="t-string">"heritage.digitalization"</span><span class="t-colon">,</span>
+  <span class="t-key">"yrs_exp"</span><span class="t-colon">:</span>  <span class="t-number">3</span><span class="t-colon">,</span>
+  <span class="t-key">"location"</span><span class="t-colon">:</span> <span class="t-string">"Banjarmasin, South Kalimantan"</span>
+<span class="t-brace">}</span></pre>
+            <div class="terminal-line t-margin-top">
+              <span class="t-prompt">~</span>
+              <span class="t-cmd">$ echo</span>
+              <span class="t-arg">$STATUS</span>
+            </div>
+            <div class="terminal-output-plain">
+              <span class="t-success">✓ Systems online. Available for collaboration.</span>
+            </div>
+            <div class="terminal-cursor-line">
+              <span class="t-prompt">~</span>
+              <span class="t-cursor-block">█</span>
+            </div>
           </div>
         </div>
       </div>
@@ -200,12 +239,15 @@
   <!-- ===== SKILLS ===== -->
   <section id="skills" class="section skills-section">
     <div class="container">
-      <span class="section-label fade-up">Tech Stack</span>
-      <h2 class="section-title fade-up">Skills &amp; <span class="gradient-text">Technologies</span></h2>
-      <p class="section-subtitle fade-up">A curated set of tools and technologies I use to build efficient and maintainable solutions.</p>
+      <div class="section-header">
+        <span class="section-num-bg" aria-hidden="true">02</span>
+        <span class="section-label fade-up">Tech Stack</span>
+        <h2 class="section-title fade-up">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle fade-up">Tools I actually use regularly. Not just things I've touched once.</p>
+      </div>
 
       <div class="skills-grid">
-        <div class="skill-category fade-up">
+        <div class="skill-category fade-up" data-cat-color="cyan">
           <div class="skill-category-header">
             <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
             <h3>Programming Languages</h3>
@@ -222,7 +264,7 @@
           </div>
         </div>
 
-        <div class="skill-category fade-up fade-up-delay-1">
+        <div class="skill-category fade-up fade-up-delay-1" data-cat-color="cyan">
           <div class="skill-category-header">
             <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
             <h3>Databases</h3>
@@ -234,7 +276,7 @@
           </div>
         </div>
 
-        <div class="skill-category fade-up fade-up-delay-2">
+        <div class="skill-category fade-up fade-up-delay-2" data-cat-color="amber">
           <div class="skill-category-header">
             <div class="skill-cat-icon"><i class="fas fa-palette"></i></div>
             <h3>Design &amp; UI/UX</h3>
@@ -249,7 +291,7 @@
           </div>
         </div>
 
-        <div class="skill-category fade-up fade-up-delay-3">
+        <div class="skill-category fade-up fade-up-delay-3" data-cat-color="purple">
           <div class="skill-category-header">
             <div class="skill-cat-icon"><i class="fas fa-wrench"></i></div>
             <h3>Tools &amp; Platforms</h3>
@@ -269,9 +311,12 @@
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience" class="section experience-section">
     <div class="container">
-      <span class="section-label fade-up">Career</span>
-      <h2 class="section-title fade-up">Work <span class="gradient-text">Experience</span></h2>
-      <p class="section-subtitle fade-up">My professional journey — from intern to government systems specialist.</p>
+      <div class="section-header">
+        <span class="section-num-bg" aria-hidden="true">03</span>
+        <span class="section-label fade-up">Career</span>
+        <h2 class="section-title fade-up">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle fade-up">From intern to government systems. Here's how it went.</p>
+      </div>
 
       <div class="timeline">
         <div class="timeline-item fade-up">
@@ -346,9 +391,12 @@
   <!-- ===== PROJECTS ===== -->
   <section id="projects" class="section projects-section">
     <div class="container">
-      <span class="section-label fade-up">Portfolio</span>
-      <h2 class="section-title fade-up">Featured <span class="gradient-text">Project</span></h2>
-      <p class="section-subtitle fade-up">A standout system that demonstrates my engineering and business-logic capabilities.</p>
+      <div class="section-header">
+        <span class="section-num-bg" aria-hidden="true">04</span>
+        <span class="section-label fade-up">Portfolio</span>
+        <h2 class="section-title fade-up">Featured <span class="gradient-text">Project</span></h2>
+        <p class="section-subtitle fade-up">A system I built from scratch that I'm genuinely proud of.</p>
+      </div>
 
       <div class="projects-grid">
         <div class="project-featured fade-up">
@@ -356,7 +404,7 @@
             <div class="project-label">Featured Project</div>
             <h3 class="project-title">Automated Accounting POS System</h3>
             <p class="project-desc">
-              An integrated Point-of-Sale engine that automatically journals every sales transaction into a full <strong>double-entry accounting system</strong> in real-time. The system eliminates manual bookkeeping by directly mapping each POS event — sales, returns, payments — into corresponding ledger entries, producing accurate and auditable financial records instantly.
+              An integrated Point-of-Sale engine that automatically journals every sales transaction into a full <strong>double-entry accounting system</strong> in real-time. The system eliminates manual bookkeeping by directly mapping each POS event (sales, returns, payments) into corresponding ledger entries, producing accurate and auditable financial records instantly.
             </p>
             <p class="project-desc">
               Built to serve small-to-medium businesses that need transparent, auditable financials without the overhead of dedicated accounting staff.
@@ -371,7 +419,35 @@
             </div>
           </div>
           <div class="project-visual">
-            <i class="fas fa-chart-line"></i>
+            <div class="proj-terminal">
+              <div class="proj-term-chrome">
+                <div class="proj-term-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="proj-term-label">POST /api/v1/sales</span>
+              </div>
+              <div class="proj-term-body">
+                <div class="proj-request-line">
+                  <span class="pt-method">POST</span>
+                  <span class="pt-path">/api/sales</span>
+                  <span class="pt-ver">HTTP/1.1</span>
+                </div>
+                <div class="proj-response-status">
+                  <span class="pt-status-code">200</span>
+                  <span class="pt-status-text">OK</span>
+                </div>
+                <pre class="proj-response-body"><span class="pt-brace">{</span>
+  <span class="pt-key">"txn_id"</span>:  <span class="pt-str">"TXN-2847"</span>,
+  <span class="pt-key">"type"</span>:    <span class="pt-str">"SALE"</span>,
+  <span class="pt-key">"amount"</span>:  <span class="pt-num">150000</span>,
+  <span class="pt-key">"journal"</span>: <span class="pt-bracket">[</span>
+    <span class="pt-brace">{</span><span class="pt-key">"dr"</span>: <span class="pt-str">"Cash"</span>,  <span class="pt-num">150000</span><span class="pt-brace">}</span>,
+    <span class="pt-brace">{</span><span class="pt-key">"cr"</span>: <span class="pt-str">"Sales"</span>, <span class="pt-num">150000</span><span class="pt-brace">}</span>
+  <span class="pt-bracket">]</span>,
+  <span class="pt-key">"balanced"</span>: <span class="pt-bool">true</span>
+<span class="pt-brace">}</span></pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -383,33 +459,36 @@
   <!-- ===== INTERESTS ===== -->
   <section id="interests" class="section interests-section">
     <div class="container">
-      <span class="section-label fade-up">Personal</span>
-      <h2 class="section-title fade-up">Interests &amp; <span class="gradient-text">Hobbies</span></h2>
-      <p class="section-subtitle fade-up">Beyond the code — the things that keep me curious and energized.</p>
+      <div class="section-header">
+        <span class="section-num-bg" aria-hidden="true">05</span>
+        <span class="section-label fade-up">Personal</span>
+        <h2 class="section-title fade-up">Interests &amp; <span class="gradient-text">Hobbies</span></h2>
+        <p class="section-subtitle fade-up">What I do when I'm not staring at a terminal.</p>
+      </div>
 
       <div class="interests-grid">
         <div class="interest-card fade-up" data-accent="#C89B4A" data-glow="rgba(200,155,74,0.25)">
           <div class="interest-icon"><i class="fas fa-coins"></i></div>
           <h3>Bitcoin &amp; Crypto</h3>
-          <p>Enthusiast tracking the decentralized finance landscape, Bitcoin fundamentals, and blockchain technology.</p>
+          <p>Following Bitcoin and crypto. Less about trading, more about understanding how the technology and the underlying financial systems actually work.</p>
         </div>
 
-        <div class="interest-card fade-up fade-up-delay-1" data-accent="#5B9FE0" data-glow="rgba(91,159,224,0.25)">
+        <div class="interest-card fade-up fade-up-delay-1" data-accent="#38BDF8" data-glow="rgba(56,189,248,0.25)">
           <div class="interest-icon"><i class="fas fa-layer-group"></i></div>
           <h3>Trading Card Games</h3>
-          <p>Collector and player of Pokémon TCG and One Piece TCG — strategy, deck-building, and community.</p>
+          <p>Collecting and playing Pokémon TCG and One Piece TCG. The deck-building part is where most of the fun is. Figuring out the right strategy before a match.</p>
         </div>
 
         <div class="interest-card fade-up fade-up-delay-2" data-accent="#8B76D0" data-glow="rgba(139,118,208,0.25)">
-          <div class="interest-icon"><i class="fas fa-pen-nib"></i></div>
-          <h3>Manga Creation</h3>
-          <p>Exploring storytelling through sequential art, character design, and visual narrative composition.</p>
+          <div class="interest-icon"><i class="fas fa-tv"></i></div>
+          <h3>Anime</h3>
+          <p>Not a hardcore viewer. I just appreciate good storytelling. One Piece and Jujutsu Kaisen are favorites because the writing actually holds up.</p>
         </div>
 
         <div class="interest-card fade-up fade-up-delay-3" data-accent="#5BB87A" data-glow="rgba(91,184,122,0.25)">
           <div class="interest-icon"><i class="fas fa-mountain-sun"></i></div>
           <h3>Outdoor Activities</h3>
-          <p>Enjoying nature, hiking, and outdoor exploration to recharge and maintain perspective.</p>
+          <p>Getting outside when I can. Hiking, walking around, anything that gets me away from a screen for a bit.</p>
         </div>
       </div>
     </div>
@@ -421,11 +500,28 @@
   <section id="contact" class="section contact-section">
     <div class="container">
       <div class="contact-wrapper">
-        <span class="section-label fade-up">Contact</span>
-        <h2 class="section-title fade-up">Let's <span class="gradient-text">Connect</span></h2>
-        <p class="section-subtitle fade-up">
-          Whether you have a project idea, a collaboration opportunity, or just want to say hi — my inbox is always open.
-        </p>
+        <div class="section-header">
+          <span class="section-num-bg" aria-hidden="true">06</span>
+          <span class="section-label fade-up">Contact</span>
+          <h2 class="section-title fade-up">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle fade-up">
+            Have a project, a question, or just want to talk shop? Feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-ping fade-up">
+          <span class="contact-ping-line">
+            <span class="t-cmd">$</span>
+            <span class="t-arg">ping</span>
+            <span class="contact-ping-target">melky_hermansyah</span>
+            <span class="t-cmd">--open-to</span>
+            <span class="t-string">collaboration</span>
+          </span>
+          <span class="contact-ping-response">
+            <span class="t-success">✓</span>
+            Response time: fast. Ready to talk.
+          </span>
+        </div>
 
         <div class="contact-cards fade-up">
           <a href="mailto:melkyherman29@gmail.com" class="contact-card">
@@ -436,20 +532,13 @@
             <span class="contact-card-value">melkyherman29@gmail.com</span>
           </a>
 
-          <a href="https://t.me/acetaker" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <div class="contact-card-icon">
-              <i class="fab fa-telegram-plane"></i>
-            </div>
-            <span class="contact-card-label">Telegram</span>
-            <span class="contact-card-value">@acetaker</span>
-          </a>
 
           <a href="https://www.linkedin.com/in/melky-hermansyah-3278371b8/" target="_blank" rel="noopener noreferrer" class="contact-card">
             <div class="contact-card-icon">
               <i class="fab fa-linkedin-in"></i>
             </div>
             <span class="contact-card-label">LinkedIn</span>
-            <span class="contact-card-value">melky-hermansyah</span>
+            <span class="contact-card-value">Melky Hermansyah</span>
           </a>
 
           <a href="https://www.instagram.com/melky_hs/" target="_blank" rel="noopener noreferrer" class="contact-card">
@@ -462,7 +551,7 @@
         </div>
 
         <div class="fade-up">
-          <a href="mailto:melkyherman29@gmail.com" class="btn btn-primary" style="font-size: 1rem; padding: 14px 40px;">
+          <a href="https://t.me/acetaker" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1rem; padding: 14px 40px;">
             Send Me a Message <i class="fas fa-arrow-right"></i>
           </a>
         </div>

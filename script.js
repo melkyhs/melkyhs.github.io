@@ -113,9 +113,10 @@ fadeElements.forEach(el => observer.observe(el));
 const typingText = document.getElementById('typing-text');
 const roles = [
   'Backend Engineer',
-  'Public Administration Systems',
-  'Historical Digitalization',
-  'Full-Stack Developer'
+  'Pelestari Warisan Digital',
+  'Card Game Collector',
+  'Public Systems Builder',
+  'Manga Enthusiast'
 ];
 
 let roleIndex = 0;
@@ -176,3 +177,11 @@ if (heroPhoto) {
     }
   });
 }
+
+// ===== INTEREST CARD ACCENT COLORS =====
+document.querySelectorAll('.interest-card[data-accent]').forEach(card => {
+  const color = card.dataset.accent;
+  card.style.setProperty('--card-color', color);
+  const icon = card.querySelector('.interest-icon');
+  if (icon) icon.style.color = color;
+});

@@ -266,12 +266,7 @@ a {
 }
 
 .hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(26, 115, 232, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26, 115, 232, 0.03) 1px, transparent 1px);
-  background-size: 48px 48px;
+  display: none;
 }
 
 .hero-content {
@@ -492,6 +487,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  color: var(--accent);
   flex-shrink: 0;
 }
 
@@ -532,8 +528,16 @@ a {
 }
 
 .about-card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
+  width: 48px;
+  height: 48px;
+  background: #e8f0fe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin: 0 auto 16px;
 }
 
 .about-card h4 {
@@ -586,6 +590,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
+  color: var(--accent);
 }
 
 .skill-category-header h3 {
@@ -781,7 +786,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4.5rem;
+  font-size: 3rem;
+  color: var(--accent);
   flex-shrink: 0;
   border: 1px solid #c5d8fc;
 }
@@ -811,9 +817,16 @@ a {
 }
 
 .interest-icon {
-  font-size: 3rem;
-  margin-bottom: 16px;
-  display: block;
+  width: 56px;
+  height: 56px;
+  background: #e8f0fe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin: 0 auto 20px;
 }
 
 .interest-card h3 {

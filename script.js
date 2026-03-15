@@ -1,3 +1,13 @@
+// ===== CONSTANTS =====
+const TYPING_SPEED = 120;
+const DELETE_SPEED = 60;
+const PAUSE_AFTER_WORD = 2000;
+const PAUSE_BETWEEN_WORDS = 500;
+
+const TILT_TRANSLATE_X = 6;
+const TILT_PERSPECTIVE = 600;
+const TILT_MAX_DEG = 4;
+
 // ===== NAVBAR SCROLL EFFECT =====
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.nav-links a[data-section]');
@@ -44,22 +54,24 @@ function updateActiveNav() {
 const hamburger = document.querySelector('.hamburger');
 const navLinksContainer = document.querySelector('.nav-links');
 
-hamburger.addEventListener('click', () => {
-  navLinksContainer.classList.toggle('open');
+function setHamburgerState(isOpen) {
   const spans = hamburger.querySelectorAll('span');
-  spans[0].style.transform = navLinksContainer.classList.contains('open') ? 'rotate(45deg) translate(5px, 5px)' : '';
-  spans[1].style.opacity = navLinksContainer.classList.contains('open') ? '0' : '1';
-  spans[2].style.transform = navLinksContainer.classList.contains('open') ? 'rotate(-45deg) translate(5px, -5px)' : '';
+  spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+  spans[1].style.opacity = isOpen ? '0' : '1';
+  spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+  hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+hamburger.addEventListener('click', () => {
+  const isOpen = navLinksContainer.classList.toggle('open');
+  setHamburgerState(isOpen);
 });
 
 // Close menu when a link is clicked
 navLinksContainer.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinksContainer.classList.remove('open');
-    const spans = hamburger.querySelectorAll('span');
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '1';
-    spans[2].style.transform = '';
+    setHamburgerState(false);
   });
 });
 
@@ -97,7 +109,7 @@ const roles = [
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-let typingDelay = 120;
+let typingDelay = TYPING_SPEED;
 
 function type() {
   const currentRole = roles[roleIndex];
@@ -105,20 +117,20 @@ function type() {
   if (isDeleting) {
     typingText.textContent = currentRole.substring(0, charIndex - 1);
     charIndex--;
-    typingDelay = 60;
+    typingDelay = DELETE_SPEED;
   } else {
     typingText.textContent = currentRole.substring(0, charIndex + 1);
     charIndex++;
-    typingDelay = 120;
+    typingDelay = TYPING_SPEED;
   }
 
   if (!isDeleting && charIndex === currentRole.length) {
-    typingDelay = 2000;
+    typingDelay = PAUSE_AFTER_WORD;
     isDeleting = true;
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
     roleIndex = (roleIndex + 1) % roles.length;
-    typingDelay = 500;
+    typingDelay = PAUSE_BETWEEN_WORDS;
   }
 
   setTimeout(type, typingDelay);
@@ -132,10 +144,23 @@ document.querySelectorAll('.timeline-card, .skill-category').forEach(card => {
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `translateX(6px) perspective(600px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+    card.style.transform = `translateX(${TILT_TRANSLATE_X}px) perspective(${TILT_PERSPECTIVE}px) rotateY(${x * TILT_MAX_DEG}deg) rotateX(${-y * TILT_MAX_DEG}deg)`;
   });
 
   card.addEventListener('mouseleave', () => {
     card.style.transform = '';
   });
 });
+
+// ===== PROFILE PHOTO FALLBACK =====
+const heroPhoto = document.querySelector('.hero-photo');
+if (heroPhoto) {
+  heroPhoto.addEventListener('error', () => {
+    const avatar = heroPhoto.closest('.hero-avatar');
+    heroPhoto.remove();
+    if (avatar) {
+      avatar.classList.remove('photo');
+      avatar.textContent = '👨‍💻';
+    }
+  });
+}

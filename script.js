@@ -4,6 +4,10 @@ const DELETE_SPEED = 55;
 const PAUSE_AFTER_WORD = 2200;
 const PAUSE_BETWEEN_WORDS = 400;
 
+const TILT_PERSPECTIVE = 800;
+const TILT_MAX_DEG = 3;
+const TILT_LIFT_PX = -2;
+
 // ===== SCROLL PROGRESS BAR =====
 const scrollProgress = document.getElementById('scrollProgress');
 
@@ -152,7 +156,7 @@ document.querySelectorAll('.timeline-card, .skill-category, .about-card').forEac
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `perspective(800px) rotateY(${x * 3}deg) rotateX(${-y * 3}deg) translateY(-2px)`;
+    card.style.transform = `perspective(${TILT_PERSPECTIVE}px) rotateY(${x * TILT_MAX_DEG}deg) rotateX(${-y * TILT_MAX_DEG}deg) translateY(${TILT_LIFT_PX}px)`;
   });
 
   card.addEventListener('mouseleave', () => {

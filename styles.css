@@ -5,6 +5,7 @@
   --bg-card: #181826;
   --bg-card-hover: #1e1e30;
   --accent: #7c3aed;
+  --accent-hover: #9f67ff;
   --accent-2: #06b6d4;
   --accent-3: #ec4899;
   --accent-glow: rgba(124, 58, 237, 0.3);
@@ -23,6 +24,8 @@
   --radius-lg: 16px;
   --radius-xl: 24px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Subtle noise texture for background depth */
+  --noise-svg: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
 /* ===== RESET & BASE ===== */
@@ -57,7 +60,7 @@ body {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9f67ff;
+  background: var(--accent-hover);
 }
 
 /* ===== SCROLL PROGRESS ===== */
@@ -197,7 +200,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: var(--noise-svg);
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;

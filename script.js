@@ -1,18 +1,30 @@
 // ===== CONSTANTS =====
-const TYPING_SPEED = 120;
-const DELETE_SPEED = 60;
-const PAUSE_AFTER_WORD = 2000;
-const PAUSE_BETWEEN_WORDS = 500;
+const TYPING_SPEED = 110;
+const DELETE_SPEED = 55;
+const PAUSE_AFTER_WORD = 2200;
+const PAUSE_BETWEEN_WORDS = 400;
 
-const TILT_TRANSLATE_X = 6;
-const TILT_PERSPECTIVE = 600;
-const TILT_MAX_DEG = 4;
+const TILT_PERSPECTIVE = 800;
+const TILT_MAX_DEG = 3;
+const TILT_LIFT_PX = -2;
+
+// ===== SCROLL PROGRESS BAR =====
+const scrollProgress = document.getElementById('scrollProgress');
+
+function updateScrollProgress() {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+  scrollProgress.style.width = progress + '%';
+}
 
 // ===== NAVBAR SCROLL EFFECT =====
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('.nav-links a[data-section]');
 
 window.addEventListener('scroll', () => {
+  updateScrollProgress();
+
   if (window.scrollY > 50) {
     navbar.classList.add('scrolled');
   } else {
@@ -91,7 +103,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.1,
+  threshold: 0.08,
   rootMargin: '0px 0px -40px 0px'
 });
 
@@ -136,15 +148,15 @@ function type() {
   setTimeout(type, typingDelay);
 }
 
-setTimeout(type, 1000);
+setTimeout(type, 800);
 
 // ===== SMOOTH HOVER TILT FOR CARDS =====
-document.querySelectorAll('.timeline-card, .skill-category').forEach(card => {
+document.querySelectorAll('.timeline-card, .skill-category, .about-card').forEach(card => {
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    card.style.transform = `translateX(${TILT_TRANSLATE_X}px) perspective(${TILT_PERSPECTIVE}px) rotateY(${x * TILT_MAX_DEG}deg) rotateX(${-y * TILT_MAX_DEG}deg)`;
+    card.style.transform = `perspective(${TILT_PERSPECTIVE}px) rotateY(${x * TILT_MAX_DEG}deg) rotateX(${-y * TILT_MAX_DEG}deg) translateY(${TILT_LIFT_PX}px)`;
   });
 
   card.addEventListener('mouseleave', () => {

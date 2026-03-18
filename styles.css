@@ -288,6 +288,33 @@ body::before {
   list-style: none;
 }
 
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-toggle {
+  min-width: 46px;
+  height: 34px;
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  background: rgba(200, 155, 74, 0.05);
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent);
+  background: rgba(200, 155, 74, 0.12);
+  transform: translateY(-1px);
+}
+
 .nav-links a {
   padding: 7px 14px;
   border-radius: 8px;
@@ -1600,6 +1627,12 @@ footer a:hover { color: var(--accent); }
 
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .nav-controls { gap: 6px; }
+  .lang-toggle {
+    min-width: 42px;
+    height: 32px;
+    font-size: 0.74rem;
+  }
 
   .nav-links.open {
     display: flex;

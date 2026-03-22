@@ -12,17 +12,17 @@ const LANG_STORAGE_KEY = 'preferredLanguage';
 const ROLE_SETS = {
   en: [
     'Backend Engineer',
-    'Heritage Digitizer',
-    'Card Game Collector',
-    'Public Systems Builder',
-    'Anime Fan'
+    'Public Sector Systems Engineer',
+    'Backend Developer (Node.js/TypeScript)',
+    'Data Workflow Optimizer',
+    'Digital Transformation Contributor'
   ],
   id: [
     'Backend Engineer',
-    'Spesialis Digitalisasi Arsip',
-    'Kolektor Trading Card Game',
-    'Pengembang Sistem Layanan Publik',
-    'Penggemar Anime'
+    'Engineer Sistem Layanan Publik',
+    'Backend Developer (Node.js/TypeScript)',
+    'Optimasi Alur Data',
+    'Kontributor Transformasi Digital'
   ]
 };
 
@@ -43,23 +43,30 @@ const TRANSLATIONS = {
       contact: 'Contact'
     },
     hero: {
-      badge: 'Backend - History - Banjarmasin',
+      badge: 'Backend Engineering - Public Service Systems',
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Indonesia',
-      ctaWork: 'View My Work <i class="fas fa-arrow-right"></i>',
-      ctaContact: 'Get In Touch <i class="fas fa-arrow-right"></i>',
-      statYears: 'Years Experience',
-      statSkills: 'Tech Skills',
+      ctaWork: 'View Resume Highlights <i class="fas fa-arrow-right"></i>',
+      ctaContact: 'Discuss Opportunities <i class="fas fa-arrow-right"></i>',
+      idRole: 'Backend Engineer &middot; Public Service Systems',
+      factExperience: 'Experience',
+      factRole: 'Current Role',
+      factEducation: 'Education',
+      factLocation: 'Location',
+      factExperienceValue: '3+ Years',
+      factRoleValue: 'Professional Staff',
+      factEducationValue: 'S.Kom - Computer Science',
+      factLocationValue: 'Banjarmasin, Indonesia',
       scroll: 'scroll'
     },
     about: {
       label: 'About Me',
-      title: 'Building Systems That <span class="gradient-text">Matter</span>',
-      p1: 'I\'m <strong>Melky Hermansyah</strong>, a Computer Science graduate (S.Kom) from Universitas Lambung Mangkurat, currently working as Staff at <strong>Disbudporapar Kota Banjarmasin</strong>, the city\'s department for culture, youth, sports, and tourism.',
-      p2: 'Most of my work is backend engineering: building systems for government offices and helping digitize historical records that used to just sit in old file cabinets. It\'s the kind of work that directly affects how public services run, which I find more meaningful than most.',
-      p3: 'I care a lot about clean, logical systems. If the data model doesn\'t make sense or the logic is convoluted, I\'ll fix it before moving on. Maintainable code saves everyone time later.',
+      title: 'Backend Systems for <span class="gradient-text">Public Services</span>',
+      p1: 'I\'m <strong>Melky Hermansyah</strong>, a Computer Science graduate (S.Kom) from Universitas Lambung Mangkurat, currently working as Professional Staff at <strong>Disbudporapar Kota Banjarmasin</strong>.',
+      p2: 'I build and maintain backend systems that support public administration workflows, with a strong focus on reliability, data integrity, and long-term maintainability.',
+      p3: 'My recent work includes digitizing historical records and improving internal data processes so teams can access information faster and deliver better public services.',
       eduTitle: 'S.Kom - Computer Science',
       eduOrg: 'Universitas Lambung Mangkurat (ULM)',
-      workTitle: 'Staff - Disbudporapar',
+      workTitle: 'Professional Staff - Disbudporapar',
       workOrg: 'Kota Banjarmasin &middot; Current',
       locationTitle: 'Banjarmasin, South Kalimantan',
       locationCountry: 'Indonesia'
@@ -76,22 +83,22 @@ const TRANSLATIONS = {
     experience: {
       label: 'Career',
       title: 'Work <span class="gradient-text">Experience</span>',
-      subtitle: 'From intern to government systems. Here\'s how it went.',
+      subtitle: 'Impact-focused roles across government operations and software internships.',
       job1Title: 'Professional Staff',
       job1Date: '2022 - Present',
-      job1Desc: 'Managing administrative systems and digital information related to cultural heritage and history at Banjarmasin\'s Department of Culture, Youth, Sports, and Tourism. Responsible for digitizing historical records, coordinating departmental data workflows, and maintaining information systems used across the institution.',
+      job1Desc: 'Lead digitization workflows for historical and cultural records, maintain administrative information systems, and coordinate cross-department data processes to improve information access and service readiness.',
       job1Tags: ['Administrative Systems', 'Historical Digitalization', 'Data Management', 'Public Administration'],
       job2Title: 'Programming Intern',
-      job2Desc: 'Conducted debugging and quality assurance on medical device software systems. Performed structured analysis of test data and contributed to research on software modification for medical calibration equipment. Gained hands-on experience in safety-critical software environments.',
+      job2Desc: 'Performed debugging and QA for medical device software, analyzed test data, and supported software modification research for calibration tools in a safety-critical environment.',
       job2Tags: ['Debugging', 'Software QA', 'Data Analysis', 'Medical Systems'],
       job3Title: 'Programming Intern',
-      job3Desc: 'Developed a full-featured Point-of-Sale (POS) and sales management application using Java and PHP. Designed and managed relational databases to support inventory tracking, sales reporting, and customer management. Delivered a working system deployed in-house for day-to-day business operations.',
+      job3Desc: 'Built a Point-of-Sale and sales management application using Java and PHP, including relational database design for inventory, reporting, and customer records, then deployed it for daily operations.',
       job3Tags: ['Java', 'PHP', 'POS System', 'Database Design', 'MySQL']
     },
     projects: {
       label: 'Portfolio',
       title: 'Featured <span class="gradient-text">Project</span>',
-      subtitle: 'A system I built from scratch that I\'m genuinely proud of.',
+      subtitle: 'A production-ready system built to solve real business and accounting workflows.',
       projectLabel: 'Featured Project',
       projectTitle: 'Automated Accounting POS System',
       projectDesc1: 'An integrated Point-of-Sale engine that automatically journals every sales transaction into a full <strong>double-entry accounting system</strong> in real-time. The system eliminates manual bookkeeping by directly mapping each POS event (sales, returns, payments) into corresponding ledger entries, producing accurate and auditable financial records instantly.',
@@ -113,10 +120,10 @@ const TRANSLATIONS = {
     contact: {
       label: 'Contact',
       title: 'Let\'s <span class="gradient-text">Connect</span>',
-      subtitle: 'Have a project, a question, or just want to talk shop? Feel free to reach out.',
-      pingFlag: 'collaboration',
-      pingResponse: '<span class="t-success">✓</span> Response time: fast. Ready to talk.',
-      cta: 'Send Me a Message <i class="fas fa-arrow-right"></i>'
+      subtitle: 'Open to backend engineering opportunities and collaboration in public-sector digital transformation.',
+      pingFlag: 'opportunities',
+      pingResponse: '<span class="t-success">✓</span> Available for backend roles and technical discussions.',
+      cta: 'Start a Conversation <i class="fas fa-arrow-right"></i>'
     },
     footer: {
       line1: 'Designed &amp; Built by <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:melkyherman29@gmail.com">melkyherman29@gmail.com</a>',
@@ -144,20 +151,27 @@ const TRANSLATIONS = {
       contact: 'Kontak'
     },
     hero: {
-      badge: 'Backend - Sejarah - Banjarmasin',
+      badge: 'Backend Engineering - Sistem Layanan Publik',
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Indonesia',
-      ctaWork: 'Lihat Karya Saya <i class="fas fa-arrow-right"></i>',
-      ctaContact: 'Hubungi Saya <i class="fas fa-arrow-right"></i>',
-      statYears: 'Tahun Pengalaman',
-      statSkills: 'Keahlian Teknologi',
+      ctaWork: 'Lihat Sorotan Resume <i class="fas fa-arrow-right"></i>',
+      ctaContact: 'Bahas Peluang <i class="fas fa-arrow-right"></i>',
+      idRole: 'Backend Engineer &middot; Sistem Layanan Publik',
+      factExperience: 'Pengalaman',
+      factRole: 'Peran Saat Ini',
+      factEducation: 'Pendidikan',
+      factLocation: 'Lokasi',
+      factExperienceValue: '3+ Tahun',
+      factRoleValue: 'Staf Profesional',
+      factEducationValue: 'S.Kom - Ilmu Komputer',
+      factLocationValue: 'Banjarmasin, Indonesia',
       scroll: 'gulir'
     },
     about: {
       label: 'Tentang Saya',
-      title: 'Membangun Sistem yang <span class="gradient-text">Bermakna</span>',
-      p1: 'Saya <strong>Melky Hermansyah</strong>, lulusan Ilmu Komputer (S.Kom) dari Universitas Lambung Mangkurat. Saat ini saya bekerja sebagai staf di <strong>Disbudporapar Kota Banjarmasin</strong>, dinas yang menangani bidang budaya, kepemudaan, olahraga, dan pariwisata.',
-      p2: 'Fokus utama saya adalah backend engineering: membangun sistem untuk kebutuhan instansi pemerintah sekaligus mendukung digitalisasi arsip sejarah yang sebelumnya tersimpan dalam berkas fisik. Bagi saya, pekerjaan ini penting karena berdampak langsung pada kualitas layanan publik.',
-      p3: 'Saya terbiasa bekerja dengan pendekatan yang rapi dan terstruktur. Jika model data belum tepat atau alur logika masih rumit, saya akan menyederhanakannya terlebih dahulu agar sistem lebih stabil, mudah dipelihara, dan siap dikembangkan.',
+      title: 'Sistem Backend untuk <span class="gradient-text">Layanan Publik</span>',
+      p1: 'Saya <strong>Melky Hermansyah</strong>, lulusan Ilmu Komputer (S.Kom) dari Universitas Lambung Mangkurat, dan saat ini bekerja sebagai Staf Profesional di <strong>Disbudporapar Kota Banjarmasin</strong>.',
+      p2: 'Saya membangun dan memelihara sistem backend untuk alur kerja administrasi publik dengan fokus pada reliabilitas, integritas data, dan kemudahan pengembangan jangka panjang.',
+      p3: 'Pekerjaan terbaru saya mencakup digitalisasi arsip sejarah dan perbaikan proses data internal agar informasi lebih cepat diakses serta layanan publik berjalan lebih efektif.',
       eduTitle: 'S.Kom - Ilmu Komputer',
       eduOrg: 'Universitas Lambung Mangkurat (ULM)',
       workTitle: 'Staf - Disbudporapar',
@@ -177,22 +191,22 @@ const TRANSLATIONS = {
     experience: {
       label: 'Karier',
       title: 'Pengalaman <span class="gradient-text">Kerja</span>',
-      subtitle: 'Perjalanan karier saya, dari masa magang hingga menangani sistem di sektor pemerintahan.',
+      subtitle: 'Peran yang berfokus pada dampak di operasional pemerintahan dan proyek perangkat lunak.',
       job1Title: 'Staf Profesional',
       job1Date: '2022 - Sekarang',
-      job1Desc: 'Mengelola sistem administrasi serta informasi digital terkait warisan budaya dan sejarah di Disbudporapar Kota Banjarmasin. Tanggung jawab saya mencakup digitalisasi arsip sejarah, koordinasi alur data lintas bagian, dan pemeliharaan sistem informasi yang digunakan di lingkungan instansi.',
+      job1Desc: 'Memimpin alur digitalisasi arsip budaya dan sejarah, memelihara sistem informasi administrasi, serta mengoordinasikan proses data lintas bagian untuk meningkatkan akses informasi dan kesiapan layanan.',
       job1Tags: ['Sistem Administrasi', 'Digitalisasi Sejarah', 'Manajemen Data', 'Administrasi Publik'],
       job2Title: 'Magang Programmer',
-      job2Desc: 'Menangani debugging dan quality assurance pada perangkat lunak alat kesehatan. Saya juga melakukan analisis terstruktur terhadap data pengujian serta berkontribusi dalam riset modifikasi perangkat lunak untuk alat kalibrasi medis, sehingga terbiasa bekerja di lingkungan yang sensitif terhadap aspek keselamatan.',
+      job2Desc: 'Menangani debugging dan QA perangkat lunak alat kesehatan, menganalisis data pengujian, serta mendukung riset modifikasi software alat kalibrasi pada lingkungan yang sensitif terhadap keselamatan.',
       job2Tags: ['Debugging', 'QA Perangkat Lunak', 'Analisis Data', 'Sistem Medis'],
       job3Title: 'Magang Programmer',
-      job3Desc: 'Mengembangkan aplikasi Point-of-Sale (POS) dan manajemen penjualan menggunakan Java dan PHP. Saya mendesain serta mengelola basis data relasional untuk kebutuhan stok, laporan penjualan, dan manajemen pelanggan. Sistem yang dibangun kemudian digunakan untuk operasional harian internal.',
+      job3Desc: 'Mengembangkan aplikasi Point-of-Sale (POS) dan manajemen penjualan berbasis Java dan PHP, termasuk desain basis data relasional untuk stok, laporan, dan data pelanggan, lalu menerapkannya untuk operasional harian.',
       job3Tags: ['Java', 'PHP', 'Sistem POS', 'Desain Basis Data', 'MySQL']
     },
     projects: {
       label: 'Portofolio',
       title: 'Proyek <span class="gradient-text">Unggulan</span>',
-      subtitle: 'Sistem yang saya bangun dari nol dan mewakili pendekatan kerja saya.',
+      subtitle: 'Sistem siap pakai yang dibangun untuk menyelesaikan alur bisnis dan akuntansi nyata.',
       projectLabel: 'Proyek Unggulan',
       projectTitle: 'Sistem POS Akuntansi Otomatis',
       projectDesc1: 'Sistem Point-of-Sale terintegrasi yang secara otomatis menjurnal setiap transaksi penjualan ke dalam <strong>sistem akuntansi double-entry</strong> secara real-time. Setiap event POS (penjualan, retur, pembayaran) dipetakan langsung ke entri buku besar yang sesuai sehingga catatan keuangan menjadi lebih akurat dan mudah diaudit.',
@@ -214,10 +228,10 @@ const TRANSLATIONS = {
     contact: {
       label: 'Kontak',
       title: 'Mari <span class="gradient-text">Terhubung</span>',
-      subtitle: 'Jika Anda memiliki proyek, pertanyaan, atau ingin berdiskusi teknis, saya terbuka untuk terhubung.',
-      pingFlag: 'kolaborasi',
-      pingResponse: '<span class="t-success">✓</span> Respons cepat. Siap berdiskusi.',
-      cta: 'Kirim Pesan <i class="fas fa-arrow-right"></i>'
+      subtitle: 'Terbuka untuk peluang backend engineering dan kolaborasi transformasi digital sektor publik.',
+      pingFlag: 'peluang',
+      pingResponse: '<span class="t-success">✓</span> Siap untuk peluang backend dan diskusi teknis.',
+      cta: 'Mulai Percakapan <i class="fas fa-arrow-right"></i>'
     },
     footer: {
       line1: 'Dirancang &amp; Dibangun oleh <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:melkyherman29@gmail.com">melkyherman29@gmail.com</a>',
@@ -441,8 +455,15 @@ function applyLanguage(language, savePreference = true) {
   setHtml('.hero-subtext', t.hero.subtext);
   setHtml('.hero-actions .btn.btn-primary', t.hero.ctaWork);
   setHtml('.hero-actions .btn.btn-outline', t.hero.ctaContact);
-  setText('.hero-stat-card.card-1 .stat-label', t.hero.statYears);
-  setText('.hero-stat-card.card-2 .stat-label', t.hero.statSkills);
+  setHtml('.hero-id-role', t.hero.idRole);
+  setText('.hero-fact-card:nth-child(1) .fact-label', t.hero.factExperience);
+  setText('.hero-fact-card:nth-child(2) .fact-label', t.hero.factRole);
+  setText('.hero-fact-card:nth-child(3) .fact-label', t.hero.factEducation);
+  setText('.hero-fact-card:nth-child(4) .fact-label', t.hero.factLocation);
+  setText('.hero-fact-card:nth-child(1) .fact-value', t.hero.factExperienceValue);
+  setText('.hero-fact-card:nth-child(2) .fact-value', t.hero.factRoleValue);
+  setText('.hero-fact-card:nth-child(3) .fact-value', t.hero.factEducationValue);
+  setText('.hero-fact-card:nth-child(4) .fact-value', t.hero.factLocationValue);
   setText('.hero-scroll-text', t.hero.scroll);
 
   setText('#about .section-label', t.about.label);
@@ -614,32 +635,6 @@ if (heroSection && parallaxEls.length > 0) {
     }
   }
 }
-
-// ===== STAT COUNTER ANIMATION =====
-function animateCounter(el, target, suffix, duration) {
-  const startTime = performance.now();
-  function tick(now) {
-    const progress = Math.min((now - startTime) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.floor(eased * target) + suffix;
-    if (progress < 1) requestAnimationFrame(tick);
-    else el.textContent = target + suffix;
-  }
-  requestAnimationFrame(tick);
-}
-
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.querySelectorAll('.hero-stat-card').forEach(card => {
-      const numEl = card.querySelector('.stat-number');
-      if (!numEl) return;
-      const raw = numEl.textContent.trim();
-      const suffix = raw.replace(/[0-9]/g, '');
-      const target = parseInt(raw, 10);
-      if (!isNaN(target)) animateCounter(numEl, target, suffix, 1400);
-    });
-  }, 700);
-});
 
 // ===== ABOUT TERMINAL LINE REVEAL =====
 const aboutTerminal = document.querySelector('.about-terminal');

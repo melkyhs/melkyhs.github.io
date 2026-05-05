@@ -52,7 +52,7 @@ Project ini dideploy menggunakan GitHub Pages dari branch `main`.
 
 ## Kontak
 
-- Email: melkyherman29@gmail.com
+- Email: sayamelkyhermansyah@gmail.com
 - LinkedIn: https://www.linkedin.com/in/melky-hermansyah-3278371b8/
 - GitHub: https://github.com/melkyhs
 - Telegram: https://t.me/acetaker

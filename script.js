@@ -126,7 +126,7 @@ const TRANSLATIONS = {
       cta: 'Start a Conversation <i class="fas fa-arrow-right"></i>'
     },
     footer: {
-      line1: 'Designed &amp; Built by <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:melkyherman29@gmail.com">melkyherman29@gmail.com</a>',
+      line1: 'Designed &amp; Built by <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:sayamelkyhermansyah@gmail.com">sayamelkyhermansyah@gmail.com</a>',
       rights: 'All rights reserved.'
     },
     labels: {
@@ -234,7 +234,7 @@ const TRANSLATIONS = {
       cta: 'Mulai Percakapan <i class="fas fa-arrow-right"></i>'
     },
     footer: {
-      line1: 'Dirancang &amp; Dibangun oleh <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:melkyherman29@gmail.com">melkyherman29@gmail.com</a>',
+      line1: 'Dirancang &amp; Dibangun oleh <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:sayamelkyhermansyah@gmail.com">sayamelkyhermansyah@gmail.com</a>',
       rights: 'Hak cipta dilindungi.'
     },
     labels: {

@@ -11,17 +11,17 @@ const LANG_STORAGE_KEY = 'preferredLanguage';
 
 const ROLE_SETS = {
   en: [
-    'Backend Engineer',
-    'Public Sector Systems Engineer',
-    'Backend Developer (Node.js/TypeScript)',
-    'Data Workflow Optimizer',
+    'IT Specialist & Systems Coordinator',
+    'IT Operations & Procurement',
+    'Workflow Automation & System Admin',
+    'Generalist & Fast Learner',
     'Digital Transformation Contributor'
   ],
   id: [
-    'Backend Engineer',
-    'Engineer Sistem Layanan Publik',
-    'Backend Developer (Node.js/TypeScript)',
-    'Optimasi Alur Data',
+    'IT Specialist & Koordinator Sistem',
+    'Operasional IT & Pengadaan',
+    'Otomatisasi Alur Kerja & Admin Sistem',
+    'Generalist & Cepat Belajar',
     'Kontributor Transformasi Digital'
   ]
 };
@@ -29,10 +29,10 @@ const ROLE_SETS = {
 const TRANSLATIONS = {
   en: {
     meta: {
-      title: 'Melky Hermansyah - Backend Engineer & Portfolio',
-      description: 'Melky Hermansyah - Backend Engineer, Public Administration Systems Specialist, and Historical Digitalization enthusiast based in Banjarmasin, Indonesia.',
-      ogTitle: 'Melky Hermansyah - Backend Engineer & Public Systems Specialist',
-      ogDescription: 'Portfolio of Melky Hermansyah - Backend Engineering, Public Administration Systems, and Historical Digitalization.'
+      title: 'Melky Hermansyah - IT Specialist & Portfolio',
+      description: 'Melky Hermansyah - IT Specialist, Systems Coordinator, and Automation enthusiast based in Banjarmasin, Indonesia.',
+      ogTitle: 'Melky Hermansyah - IT Specialist & Systems Coordinator',
+      ogDescription: 'Portfolio of Melky Hermansyah - IT Operations, Procurement, and Digitalization.'
     },
     nav: {
       about: 'About',
@@ -43,11 +43,11 @@ const TRANSLATIONS = {
       contact: 'Contact'
     },
     hero: {
-      badge: 'Backend Engineering - Public Service Systems',
+      badge: 'IT Operations &middot; Procurement &middot; Automation',
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Indonesia',
       ctaWork: 'View Resume Highlights <i class="fas fa-arrow-right"></i>',
       ctaContact: 'Discuss Opportunities <i class="fas fa-arrow-right"></i>',
-      idRole: 'Backend Engineer &middot; Public Service Systems',
+      idRole: 'IT Specialist &middot; Systems Coordinator',
       factExperience: 'Experience',
       factRole: 'Current Role',
       factEducation: 'Education',
@@ -60,10 +60,10 @@ const TRANSLATIONS = {
     },
     about: {
       label: 'About Me',
-      title: 'Backend Systems for <span class="gradient-text">Public Services</span>',
+      title: 'IT &amp; Systems for <span class="gradient-text">Public Operations</span>',
       p1: 'I\'m <strong>Melky Hermansyah</strong>, a Computer Science graduate (S.Kom) from Universitas Lambung Mangkurat, currently working as Professional Staff at <strong>Disbudporapar Kota Banjarmasin</strong>.',
-      p2: 'I build and maintain backend systems that support public administration workflows, with a strong focus on reliability, data integrity, and long-term maintainability.',
-      p3: 'My recent work includes digitizing historical records and improving internal data processes so teams can access information faster and deliver better public services.',
+      p2: 'As a highly adaptable IT generalist, I bridge the gap between technical infrastructure and operational workflows. I have a proven track record of managing information systems, coordinating complex procurements, and streamlining administrative processes within government sectors.',
+      p3: 'I thrive in cross-functional environments and am deeply passionate about <strong>automation systems</strong>—focusing on replacing repetitive manual tasks with efficient, scalable digital workflows.',
       eduTitle: 'S.Kom - Computer Science',
       eduOrg: 'Universitas Lambung Mangkurat (ULM)',
       workTitle: 'Professional Staff - Disbudporapar',
@@ -78,22 +78,22 @@ const TRANSLATIONS = {
       cat1: 'Programming Languages',
       cat2: 'Databases',
       cat3: 'Design &amp; UI/UX',
-      cat4: 'Tools &amp; Platforms'
+      cat4: 'Operations &amp; Platforms'
     },
     experience: {
       label: 'Career',
       title: 'Work <span class="gradient-text">Experience</span>',
-      subtitle: 'Impact-focused roles across government operations and software internships.',
+      subtitle: 'Impact-focused roles across IT operations, procurement, and software development.',
       job1Title: 'Professional Staff',
-      job1Date: '2022 - Present',
-      job1Desc: 'Lead digitization workflows for historical and cultural records, maintain administrative information systems, and coordinate cross-department data processes to improve information access and service readiness.',
-      job1Tags: ['Administrative Systems', 'Historical Digitalization', 'Data Management', 'Public Administration'],
+      job1Date: '2024 - Present',
+      job1Desc: 'Spearheaded the digital transformation of historical archives and maintained departmental IT infrastructure, ensuring high data accuracy and system uptime. Acted as Procurement Officer and Event Coordinator for 5–10 city-scale public events, ensuring end-to-end operational success and compliance.',
+      job1Tags: ['IT Operations', 'Procurement', 'Event Management', 'Digitalization'],
       job2Title: 'Programming Intern',
-      job2Desc: 'Performed debugging and QA for medical device software, analyzed test data, and supported software modification research for calibration tools in a safety-critical environment.',
-      job2Tags: ['Debugging', 'Software QA', 'Data Analysis', 'Medical Systems'],
+      job2Desc: 'Executed rigorous debugging and quality assurance for safety-critical medical device software. Produced high-accuracy technical reports and supported research initiatives for calibration tool software modifications.',
+      job2Tags: ['Software QA', 'Debugging', 'Technical Documentation', 'Compliance'],
       job3Title: 'Programming Intern',
-      job3Desc: 'Built a Point-of-Sale and sales management application using Java and PHP, including relational database design for inventory, reporting, and customer records, then deployed it for daily operations.',
-      job3Tags: ['Java', 'PHP', 'POS System', 'Database Design', 'MySQL']
+      job3Desc: 'Engineered and deployed an end-to-end Point-of-Sale (POS) and inventory management system from scratch. Transformed daily manual operations into an automated, database-driven workflow used in daily business.',
+      job3Tags: ['Full-stack', 'Java', 'PHP', 'MySQL', 'Workflow Automation']
     },
     projects: {
       label: 'Portfolio',
@@ -108,8 +108,8 @@ const TRANSLATIONS = {
       label: 'Personal',
       title: 'Interests &amp; <span class="gradient-text">Hobbies</span>',
       subtitle: 'What I do when I\'m not staring at a terminal.',
-      card1Title: 'Bitcoin &amp; Crypto',
-      card1Desc: 'Following Bitcoin and crypto. Less about trading, more about understanding how the technology and the underlying financial systems actually work.',
+      card1Title: 'Automation Systems',
+      card1Desc: 'I have a strong interest in how technology can streamline repetitive processes. I enjoy exploring ways to automate data workflows and administrative operations to improve both efficiency and accuracy.',
       card2Title: 'Trading Card Games',
       card2Desc: 'Collecting and playing Pokemon TCG and One Piece TCG. The deck-building part is where most of the fun is. Figuring out the right strategy before a match.',
       card3Title: 'Anime',
@@ -120,9 +120,9 @@ const TRANSLATIONS = {
     contact: {
       label: 'Contact',
       title: 'Let\'s <span class="gradient-text">Connect</span>',
-      subtitle: 'Open to backend engineering opportunities and collaboration in public-sector digital transformation.',
-      pingFlag: 'opportunities',
-      pingResponse: '<span class="t-success">✓</span> Available for backend roles and technical discussions.',
+      subtitle: 'Open to diverse IT roles, operational systems coordination, and relocation anywhere in Indonesia.',
+      pingFlag: '"open_to_relocation"',
+      pingResponse: '<span class="t-success">✓</span> Available to start immediately. Let\'s discuss where I can add value.',
       cta: 'Start a Conversation <i class="fas fa-arrow-right"></i>'
     },
     footer: {
@@ -137,10 +137,10 @@ const TRANSLATIONS = {
   },
   id: {
     meta: {
-      title: 'Melky Hermansyah - Backend Engineer & Portofolio',
-      description: 'Melky Hermansyah - Backend Engineer yang berfokus pada sistem administrasi publik dan digitalisasi arsip sejarah di Banjarmasin, Indonesia.',
-      ogTitle: 'Melky Hermansyah - Backend Engineer & Spesialis Sistem Publik',
-      ogDescription: 'Portofolio Melky Hermansyah - Backend engineering, pengembangan sistem administrasi publik, dan digitalisasi arsip sejarah.'
+      title: 'Melky Hermansyah - Spesialis IT & Portofolio',
+      description: 'Melky Hermansyah - Spesialis IT, Koordinator Sistem, dan Penggiat Otomatisasi di Banjarmasin, Indonesia.',
+      ogTitle: 'Melky Hermansyah - Spesialis IT & Koordinator Sistem',
+      ogDescription: 'Portofolio Melky Hermansyah - Operasional IT, Pengadaan, dan Digitalisasi.'
     },
     nav: {
       about: 'Tentang',
@@ -151,11 +151,11 @@ const TRANSLATIONS = {
       contact: 'Kontak'
     },
     hero: {
-      badge: 'Backend Engineering - Sistem Layanan Publik',
+      badge: 'Operasional IT &middot; Pengadaan &middot; Otomatisasi',
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Indonesia',
       ctaWork: 'Lihat Sorotan Resume <i class="fas fa-arrow-right"></i>',
       ctaContact: 'Bahas Peluang <i class="fas fa-arrow-right"></i>',
-      idRole: 'Backend Engineer &middot; Sistem Layanan Publik',
+      idRole: 'Spesialis IT &middot; Koordinator Sistem',
       factExperience: 'Pengalaman',
       factRole: 'Peran Saat Ini',
       factEducation: 'Pendidikan',
@@ -168,10 +168,10 @@ const TRANSLATIONS = {
     },
     about: {
       label: 'Tentang Saya',
-      title: 'Sistem Backend untuk <span class="gradient-text">Layanan Publik</span>',
+      title: 'Solusi IT untuk <span class="gradient-text">Operasional Publik</span>',
       p1: 'Saya <strong>Melky Hermansyah</strong>, lulusan Ilmu Komputer (S.Kom) dari Universitas Lambung Mangkurat, dan saat ini bekerja sebagai Staf Profesional di <strong>Disbudporapar Kota Banjarmasin</strong>.',
-      p2: 'Saya membangun dan memelihara sistem backend untuk alur kerja administrasi publik dengan fokus pada reliabilitas, integritas data, dan kemudahan pengembangan jangka panjang.',
-      p3: 'Pekerjaan terbaru saya mencakup digitalisasi arsip sejarah dan perbaikan proses data internal agar informasi lebih cepat diakses serta layanan publik berjalan lebih efektif.',
+      p2: 'Sebagai seorang generalis IT yang adaptif, saya menjembatani celah antara infrastruktur teknis dan alur kerja operasional. Saya berpengalaman dalam mengelola sistem informasi, mengoordinasi pengadaan yang kompleks, dan merampingkan proses administrasi pemerintahan.',
+      p3: 'Saya menyukai tantangan di lingkungan lintas fungsi serta memiliki gairah tinggi terhadap <strong>sistem otomatisasi</strong>—berupaya mengganti tugas manual yang berulang dengan alur digital yang efisien dan terukur.',
       eduTitle: 'S.Kom - Ilmu Komputer',
       eduOrg: 'Universitas Lambung Mangkurat (ULM)',
       workTitle: 'Staf - Disbudporapar',
@@ -186,22 +186,22 @@ const TRANSLATIONS = {
       cat1: 'Bahasa Pemrograman',
       cat2: 'Basis Data',
       cat3: 'Desain &amp; UI/UX',
-      cat4: 'Perangkat &amp; Platform'
+      cat4: 'Operasional &amp; Platform'
     },
     experience: {
       label: 'Karier',
       title: 'Pengalaman <span class="gradient-text">Kerja</span>',
-      subtitle: 'Peran yang berfokus pada dampak di operasional pemerintahan dan proyek perangkat lunak.',
+      subtitle: 'Peran yang berfokus pada dampak di operasional IT, pengadaan, dan software development.',
       job1Title: 'Staf Profesional',
-      job1Date: '2022 - Sekarang',
-      job1Desc: 'Memimpin alur digitalisasi arsip budaya dan sejarah, memelihara sistem informasi administrasi, serta mengoordinasikan proses data lintas bagian untuk meningkatkan akses informasi dan kesiapan layanan.',
-      job1Tags: ['Sistem Administrasi', 'Digitalisasi Sejarah', 'Manajemen Data', 'Administrasi Publik'],
+      job1Date: '2024 - Sekarang',
+      job1Desc: 'Mempelopori transformasi digital untuk arsip sejarah dan memelihara infrastruktur IT dinas, memastikan keakuratan data serta ketersediaan sistem. Bertindak sebagai Petugas Pengadaan dan Koordinator Lapangan untuk 5–10 acara berskala kota, menjamin kelancaran operasional harian pemerintahan dan kepatuhan dari awal hingga akhir.',
+      job1Tags: ['Operasional IT', 'Pengadaan', 'Manajemen Acara', 'Digitalisasi'],
       job2Title: 'Magang Programmer',
-      job2Desc: 'Menangani debugging dan QA perangkat lunak alat kesehatan, menganalisis data pengujian, serta mendukung riset modifikasi software alat kalibrasi pada lingkungan yang sensitif terhadap keselamatan.',
-      job2Tags: ['Debugging', 'QA Perangkat Lunak', 'Analisis Data', 'Sistem Medis'],
+      job2Desc: 'Mengeksekusi siklus evaluasi (debugging) mandiri dan jaminan mutu (QA) terhadap perangkat lunak alat ukur medis di lingkungan yang krisis. Menghasilkan output dokumentasi teknis berkualitas tinggi serta riset pendukung alat kalibrasi.',
+      job2Tags: ['QA Perangkat Lunak', 'Debugging', 'Dokumentasi Teknis', 'Kepatuhan'],
       job3Title: 'Magang Programmer',
-      job3Desc: 'Mengembangkan aplikasi Point-of-Sale (POS) dan manajemen penjualan berbasis Java dan PHP, termasuk desain basis data relasional untuk stok, laporan, dan data pelanggan, lalu menerapkannya untuk operasional harian.',
-      job3Tags: ['Java', 'PHP', 'Sistem POS', 'Desain Basis Data', 'MySQL']
+      job3Desc: 'Merekayasa dan merilis sistem Point-of-Sale (POS) dan manajemen inventaris menyeluruh dari nol. Mentransformasikan prosedur pengelolaan manual sehari-hari menjadi alur otomatis yang sepenuhnya digerakkan oleh database dan diterapkan penuh hingga sekarang.',
+      job3Tags: ['Full-stack', 'Java', 'PHP', 'MySQL', 'Otomatisasi Alur Kerja']
     },
     projects: {
       label: 'Portofolio',
@@ -216,8 +216,8 @@ const TRANSLATIONS = {
       label: 'Personal',
       title: 'Minat &amp; <span class="gradient-text">Hobi</span>',
       subtitle: 'Aktivitas yang saya nikmati di luar pekerjaan.',
-      card1Title: 'Bitcoin &amp; Kripto',
-      card1Desc: 'Saya mengikuti perkembangan Bitcoin dan kripto, bukan hanya dari sisi trading, tetapi juga dari aspek teknologi serta mekanisme finansial di baliknya.',
+      card1Title: 'Sistem Otomatisasi',
+      card1Desc: 'Saya sangat tertarik dengan bagaimana teknologi bisa mempersingkat proses yang berulang. Mengeksplorasi cara otomatisasi alur data dan operasional yang tidak hanya efisien, tetapi juga akurat.',
       card2Title: 'Trading Card Game',
       card2Desc: 'Saya mengoleksi dan bermain Pokemon TCG serta One Piece TCG. Bagian yang paling saya nikmati adalah menyusun deck dan merancang strategi sebelum bertanding.',
       card3Title: 'Anime',
@@ -228,9 +228,9 @@ const TRANSLATIONS = {
     contact: {
       label: 'Kontak',
       title: 'Mari <span class="gradient-text">Terhubung</span>',
-      subtitle: 'Terbuka untuk peluang backend engineering dan kolaborasi transformasi digital sektor publik.',
-      pingFlag: 'peluang',
-      pingResponse: '<span class="t-success">✓</span> Siap untuk peluang backend dan diskusi teknis.',
+      subtitle: 'Terbuka untuk beragam peran IT generalis, koordinasi sistem, maupun siap relokasi di seluruh wilayah Indonesia.',
+      pingFlag: '"siap_relokasi"',
+      pingResponse: '<span class="t-success">✓</span> Siap mulai bekerja secepatnya. Mari diskusikan bagaimana saya bisa memberikan nilai tambah.',
       cta: 'Mulai Percakapan <i class="fas fa-arrow-right"></i>'
     },
     footer: {

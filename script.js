@@ -43,7 +43,7 @@ const TRANSLATIONS = {
       contact: 'Contact'
     },
     hero: {
-      badge: 'IT Operations &middot; Procurement &middot; Automation',
+      badge: '<span class="dot"></span>IT Operations &middot; Procurement &middot; Automation',
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Indonesia',
       ctaWork: 'View Resume Highlights <i class="fas fa-arrow-right"></i>',
       ctaContact: 'Discuss Opportunities <i class="fas fa-arrow-right"></i>',
@@ -151,7 +151,7 @@ const TRANSLATIONS = {
       contact: 'Kontak'
     },
     hero: {
-      badge: 'Operasional IT &middot; Pengadaan &middot; Otomatisasi',
+      badge: '<span class="dot"></span>Operasional IT &middot; Pengadaan &middot; Otomatisasi',
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Indonesia',
       ctaWork: 'Lihat Sorotan Resume <i class="fas fa-arrow-right"></i>',
       ctaContact: 'Bahas Peluang <i class="fas fa-arrow-right"></i>',
@@ -451,7 +451,7 @@ function applyLanguage(language, savePreference = true) {
   setText('.nav-links li:nth-child(5) a', t.nav.interests);
   setText('.nav-links li:nth-child(6) a', t.nav.contact);
 
-  setText('.hero-badge', t.hero.badge);
+  setHtml('.hero-badge', t.hero.badge);
   setHtml('.hero-subtext', t.hero.subtext);
   setHtml('.hero-actions .btn.btn-primary', t.hero.ctaWork);
   setHtml('.hero-actions .btn.btn-outline', t.hero.ctaContact);

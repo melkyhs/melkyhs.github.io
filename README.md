@@ -1,6 +1,6 @@
 # Melky Hermansyah Portfolio
 
-Website portofolio pribadi yang menampilkan profil, pengalaman kerja, proyek unggulan, dan informasi kontak.
+Website portofolio pribadi yang menampilkan profil profesional, pengalaman kerja, pendidikan, sertifikasi, serta informasi kontak.
 
 ## Live Demo
 
@@ -11,7 +11,7 @@ Website portofolio pribadi yang menampilkan profil, pengalaman kerja, proyek ung
 - Desain responsif untuk desktop dan mobile
 - Dukungan dua bahasa (English/Indonesia)
 - Animasi interaktif: typing effect, scroll progress, parallax, dan reveal on scroll
-- Struktur konten resume: About, Skills, Experience, Projects, Interests, Contact
+- Struktur konten resume: Summary, Skills, Experience, Education, Certifications, Contact
 - Gaya visual bertema tech-modern
 
 ## Tech Stack
@@ -53,9 +53,9 @@ Project ini dideploy menggunakan GitHub Pages dari branch `main`.
 ## Kontak
 
 - Email: sayamelkyhermansyah@gmail.com
-- LinkedIn: https://www.linkedin.com/in/melky-hermansyah-3278371b8/
-- GitHub: https://github.com/melkyhs
-- Telegram: https://t.me/acetaker
+- LinkedIn: https://linkedin.com/in/melky-hermansyah-327837168
+- Portfolio: https://melkyhs.github.io
+- Phone: +62895701151217
 
 ## Lisensi
 

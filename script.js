@@ -81,19 +81,30 @@ const TRANSLATIONS = {
       cat4: 'Languages'
     },
     experience: {
-      label: 'Experience',
+      label: 'WORK EXPERIENCE',
       title: 'Work <span class="gradient-text">Experience</span>',
-      subtitle: 'Professional roles in public administration, QA testing, and full stack development.',
-      job1Title: 'Public & Administrative Support Specialist',
+      subtitle: 'Professional experience across public sector operations, healthcare software quality, and business systems.',
+      job1Title: 'Dinas Kebudayaan, Kepemudaan, Olahraga, dan Pariwisata Kota Banjarmasin',
       job1Date: 'Banjarmasin',
-      job1Desc: 'Managed structured internal administration and archiving of regional cultural and tourism data, guided visitors on local history and culture, and supported municipal project operations.',
-      job1Tags: ['Public Administration', 'Data Archiving', 'Public Service', 'Government Operations'],
-      job2Title: 'Software Testing & Front-End QA Specialist',
-      job2Desc: 'Executed software testing, structured debugging, and front-end maintenance for medical device applications while producing detailed bug reports and UX evaluations.',
-      job2Tags: ['Software Testing', 'Debugging', 'Front-End QA', 'UX Evaluation'],
-      job3Title: 'Full Stack Developer (POS & Inventory System)',
-      job3Desc: 'Built POS and inventory software using JavaScript and PHP, designed MySQL schemas for stock and sales tracking, and ensured transactional stability for daily operations.',
-      job3Tags: ['Full Stack', 'JavaScript', 'PHP', 'MySQL', 'POS Systems']
+      job1Points: [
+        'Managed internal administration and structured archiving of regional cultural and tourism data.',
+        'Served as an official guide who educated visitors about local history and culture interactively.',
+        'Supported smooth execution of municipal operational projects in the culture and tourism sector.'
+      ],
+      job2Title: 'Loka Pengamanan Fasilitas Kesehatan (LPFK) Banjarbaru',
+      job2Date: 'Banjarbaru',
+      job2Points: [
+        'Performed software testing, structured debugging, and front-end interface maintenance for medical device applications.',
+        'Prepared testing documentation, bug reports, and interface evaluations with high accuracy.',
+        'Contributed to software research and modification for medical calibration tools to improve User Experience (UX).'
+      ],
+      job3Title: 'UD. Borneo Ban',
+      job3Date: 'Banjar',
+      job3Points: [
+        'Designed and initiated a Point-of-Sale (POS) and inventory management system from scratch using JavaScript and PHP.',
+        'Designed and optimized MySQL database schemas for stock tracking, sales transaction records, and customer data management.',
+        'Ensured system stability and accuracy to support efficient daily transactions and financial reporting.'
+      ]
     },
     projects: {
       label: 'Education',
@@ -189,19 +200,30 @@ const TRANSLATIONS = {
       cat4: 'Bahasa'
     },
     experience: {
-      label: 'Pengalaman',
+      label: 'PENGALAMAN KERJA',
       title: 'Pengalaman <span class="gradient-text">Kerja</span>',
-      subtitle: 'Peran profesional pada administrasi publik, QA testing, dan pengembangan full stack.',
-      job1Title: 'Public & Administrative Support Specialist',
+      subtitle: 'Pengalaman kerja profesional dari sektor publik, kesehatan, dan bisnis.',
+      job1Title: 'Dinas Kebudayaan, Kepemudaan, Olahraga, dan Pariwisata Kota Banjarmasin',
       job1Date: 'Banjarmasin',
-      job1Desc: 'Mengelola administrasi internal terstruktur serta pengarsipan data budaya dan pariwisata, menjadi pemandu resmi edukasi sejarah lokal, dan mendukung operasional proyek pemerintah kota.',
-      job1Tags: ['Administrasi Publik', 'Pengarsipan Data', 'Layanan Publik', 'Operasional Pemerintahan'],
-      job2Title: 'Software Testing & Front-End QA Specialist',
-      job2Desc: 'Menjalankan software testing, debugging terstruktur, dan pemeliharaan front-end aplikasi alat medis sambil menyusun dokumentasi bug serta evaluasi UX secara presisi.',
-      job2Tags: ['Software Testing', 'Debugging', 'Front-End QA', 'Evaluasi UX'],
-      job3Title: 'Full Stack Developer (POS & Inventory System)',
-      job3Desc: 'Membangun sistem POS dan inventaris dari nol menggunakan JavaScript dan PHP, mendesain skema MySQL untuk stok dan penjualan, serta menjaga akurasi transaksi operasional harian.',
-      job3Tags: ['Full Stack', 'JavaScript', 'PHP', 'MySQL', 'Sistem POS']
+      job1Points: [
+        'Mengelola administrasi internal serta pengarsipan data kebudayaan dan pariwisata daerah secara terstruktur.',
+        'Bertindak sebagai pemandu resmi yang mengedukasi pengunjung terkait sejarah dan budaya lokal secara interaktif.',
+        'Mendukung kelancaran pelaksanaan proyek operasional pemerintah kota di sektor kebudayaan dan pariwisata.'
+      ],
+      job2Title: 'Loka Pengamanan Fasilitas Kesehatan (LPFK) Banjarbaru',
+      job2Date: 'Banjarbaru',
+      job2Points: [
+        'Melakukan pengujian perangkat lunak (software testing), debugging terstruktur, serta pemeliharaan antarmuka (front-end) pada aplikasi perangkat medis.',
+        'Menyusun dokumentasi hasil pengujian, bug report, dan evaluasi antarmuka dengan tingkat akurasi tinggi.',
+        'Berkontribusi dalam riset dan modifikasi perangkat lunak untuk peralatan kalibrasi medis guna meningkatkan User Experience (UX).'
+      ],
+      job3Title: 'UD. Borneo Ban',
+      job3Date: 'Banjar',
+      job3Points: [
+        'Merancang dan merintis sistem Point-of-Sale (POS) serta manajemen inventaris dari awal (from scratch) menggunakan JavaScript dan PHP.',
+        'Merancang dan mengoptimalkan skema basis data MySQL untuk pelacakan stok barang, pencatatan transaksi penjualan, dan pengelolaan data pelanggan.',
+        'Memastikan stabilitas dan akurasi sistem untuk mendukung efisiensi transaksi harian dan pembuatan laporan keuangan.'
+      ]
     },
     projects: {
       label: 'Pendidikan',
@@ -491,14 +513,13 @@ function applyLanguage(language, savePreference = true) {
   setText('#experience .section-subtitle', t.experience.subtitle);
   setText('#experience .timeline-item:nth-child(1) .timeline-title', t.experience.job1Title);
   setText('#experience .timeline-item:nth-child(1) .timeline-date', t.experience.job1Date);
-  setText('#experience .timeline-item:nth-child(1) .timeline-desc', t.experience.job1Desc);
-  setTextList('#experience .timeline-item:nth-child(1) .timeline-tags .tag', t.experience.job1Tags);
+  setTextList('#experience .timeline-item:nth-child(1) .timeline-points li', t.experience.job1Points);
   setText('#experience .timeline-item:nth-child(2) .timeline-title', t.experience.job2Title);
-  setText('#experience .timeline-item:nth-child(2) .timeline-desc', t.experience.job2Desc);
-  setTextList('#experience .timeline-item:nth-child(2) .timeline-tags .tag', t.experience.job2Tags);
+  setText('#experience .timeline-item:nth-child(2) .timeline-date', t.experience.job2Date);
+  setTextList('#experience .timeline-item:nth-child(2) .timeline-points li', t.experience.job2Points);
   setText('#experience .timeline-item:nth-child(3) .timeline-title', t.experience.job3Title);
-  setText('#experience .timeline-item:nth-child(3) .timeline-desc', t.experience.job3Desc);
-  setTextList('#experience .timeline-item:nth-child(3) .timeline-tags .tag', t.experience.job3Tags);
+  setText('#experience .timeline-item:nth-child(3) .timeline-date', t.experience.job3Date);
+  setTextList('#experience .timeline-item:nth-child(3) .timeline-points li', t.experience.job3Points);
 
   setText('#projects .section-label', t.projects.label);
   setHtml('#projects .section-title', t.projects.title);

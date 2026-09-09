@@ -1253,6 +1253,19 @@ body::before {
   line-height: 1.75;
 }
 
+.timeline-points {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.timeline-points li {
+  margin-bottom: 8px;
+}
+
+.timeline-points li:last-child {
+  margin-bottom: 0;
+}
+
 .timeline-tags {
   display: flex;
   flex-wrap: wrap;

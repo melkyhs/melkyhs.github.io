@@ -53,7 +53,7 @@ Project ini dideploy menggunakan GitHub Pages dari branch `main`.
 ## Kontak
 
 - Email: sayamelkyhermansyah@gmail.com
-- LinkedIn: https://linkedin.com/in/melky-hermansyah-327837168
+- LinkedIn: https://linkedin.com/in/melky-hermansyah-3278371b8
 - Portfolio: https://melkyhs.github.io
 - Phone: +62895701151217
 

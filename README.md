@@ -1,62 +1,100 @@
-# Melky Hermansyah Portfolio
+# Melky Hermansyah — Personal Portfolio Website
 
-Website portofolio pribadi yang menampilkan profil profesional, pengalaman kerja, pendidikan, sertifikasi, serta informasi kontak.
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-melkyhs.github.io-C89B4A?style=for-the-badge&logo=github)](https://melkyhs.github.io)
+[![License](https://img.shields.io/badge/License-All_Rights_Reserved-38BDF8?style=for-the-badge)](#license)
 
-## Live Demo
+A modern, high-performance personal portfolio website for **Melky Hermansyah, S.Kom.** — Operations & Data Specialist based in Banjarmasin, Indonesia. Built with vanilla HTML5, CSS3, and JavaScript, featuring interactive terminal widgets, dual-language support (English & Bahasa Indonesia), and dynamic layout cards aligned with verified professional CV credentials.
 
-- https://melkyhs.github.io
+---
 
-## Fitur Utama
+## 🌟 Live Demo
 
-- Desain responsif untuk desktop dan mobile
-- Dukungan dua bahasa (English/Indonesia)
-- Animasi interaktif: typing effect, scroll progress, parallax, dan reveal on scroll
-- Struktur konten resume: Summary, Skills, Experience, Education, Certifications, Contact
-- Gaya visual bertema tech-modern
+- **Live URL:** [https://melkyhs.github.io](https://melkyhs.github.io)
+- **GitHub Repository:** [github.com/melkyhs/melkyhs.github.io](https://github.com/melkyhs/melkyhs.github.io)
 
-## Tech Stack
+---
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+## ⚡ Features & Highlights
 
-## Struktur Proyek
+- **Bilingual Support (EN / ID):** Instant language switcher button seamlessly switching interface and CV content between English and Bahasa Indonesia.
+- **Interactive UI/UX & Micro-Animations:**
+  - Dynamic Hero Typing Animation for operational roles.
+  - Interactive Terminal Code Widgets showcasing structured JSON profiles and HTTP responses.
+  - Smooth 3D tilt effects on cards and scroll progress indicators.
+  - Subtle mouse parallax and entrance reveal animations.
+- **Typographic & Visual Hierarchy:** Clear, high-contrast layouts prioritizing enterprise companies and institutions above professional roles.
+- **CV Aligned Sections:**
+  - **Hero:** Quick status, location badge, contact links, and downloadable CV PDF.
+  - **Summary:** Background overview, core expertise, and site operation support readiness.
+  - **Skills:** Categorized into Operations & Data, Tools & Software (MS Office Certified), and Communication.
+  - **Experience:** Detailed timeline for 4 professional roles (Disbudporapar Kota Banjarmasin, BPS, UD. Borneo Ban, LPFK).
+  - **Education:** S1 Ilmu Komputer at Universitas Lambung Mangkurat.
+  - **Certifications & Achievements:** MS Junior Office Specialist, 2nd Place National English Public Speaking.
+  - **Contact:** Direct links for Email, LinkedIn, GitHub, and Phone.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Structure:** HTML5 (Semantic & Accessible markup)
+- **Styling:** CSS3 (Custom CSS variables, Glassmorphism, Responsive Grid/Flexbox)
+- **Logic & i18n:** Vanilla JavaScript (ES6+, DOM Manipulation, LocalStorage, Intersection Observer)
+- **Fonts & Icons:** Google Fonts (*Inter*, *Playfair Display*, *JetBrains Mono*) & Font Awesome 6.5.1
+
+---
+
+## 📁 Repository Structure
 
 ```text
-.
-|-- index.html
-|-- styles.css
-|-- script.js
-|-- assets/
-`-- README.md
+melkyhs.github.io/
+├── index.html              # Main HTML markup & structure
+├── styles.css              # Custom CSS design system, themes, and animations
+├── script.js              # Interactivity, smooth scrolling, and bilingual i18n translations
+├── assets/                 # Project assets
+│   ├── CV_Melky_Hermansyah.pdf   # Updated Curriculum Vitae PDF document
+│   ├── photo.png          # Profile avatar image
+│   └── favicon.svg        # Custom site favicon
+└── README.md               # Repository documentation
 ```
 
-## Menjalankan Secara Lokal
+---
 
-1. Clone repository ini.
-2. Buka folder proyek.
-3. Jalankan dengan salah satu cara berikut:
-	- Buka `index.html` langsung di browser.
-	- Gunakan ekstensi Live Server di VS Code untuk pengalaman development yang lebih nyaman.
+## 💻 Local Setup & Development
 
-## Deployment
+To view or edit the website locally:
 
-Project ini dideploy menggunakan GitHub Pages dari branch `main`.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/melkyhs/melkyhs.github.io.git
+   cd melkyhs.github.io
+   ```
 
-## Kustomisasi Konten
+2. **Serve locally:**
+   - **Option 1 (Direct):** Open `index.html` in any web browser.
+   - **Option 2 (Python Server):**
+     ```bash
+     python -m http.server 3000
+     ```
+     Then open `http://localhost:3000` in your browser.
+   - **Option 3 (Live Server):** Use VS Code Live Server extension.
 
-- Konten statis utama ada di `index.html`.
-- Konten bilingual dikelola melalui objek `TRANSLATIONS` di `script.js`.
-- Seluruh styling visual ada di `styles.css`.
-- Aset gambar disimpan di folder `assets/`.
+---
 
-## Kontak
+## 🚀 Deployment
 
-- Email: sayamelkyhermansyah@gmail.com
-- LinkedIn: https://linkedin.com/in/melky-hermansyah-327837168
-- Portfolio: https://melkyhs.github.io
-- Phone: +62895701151217
+The site is automatically hosted and deployed via **GitHub Pages** directly from the `main` branch.
 
-## Lisensi
+---
 
-All rights reserved.
+## 📬 Contact & Socials
+
+- **Email:** [sayamelkyhermansyah@gmail.com](mailto:sayamelkyhermansyah@gmail.com)
+- **LinkedIn:** [linkedin.com/in/melkyhermansyah](https://linkedin.com/in/melkyhermansyah)
+- **GitHub:** [github.com/melkyhs](https://github.com/melkyhs)
+- **Phone:** [+62 895-7011-51217](tel:+62895701151217)
+
+---
+
+## 📄 License
+
+&copy; Melky Hermansyah. All rights reserved.

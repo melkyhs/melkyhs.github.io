@@ -47,6 +47,9 @@ const TRANSLATIONS = {
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Kalimantan Selatan',
       ctaWork: 'View Profile Details <i class="fas fa-arrow-right"></i>',
       ctaContact: 'Contact Me <i class="fas fa-arrow-right"></i>',
+      cvFile: 'assets/CV_Melky_Hermansyah.pdf',
+      cvFilename: 'CV_Melky_Hermansyah_EN.pdf',
+      cvDownloadText: 'Download CV <i class="fas fa-download"></i>',
       idRole: 'Operations &middot; Data Specialist',
       factExperience: 'Experience',
       factRole: 'Certification',
@@ -175,6 +178,9 @@ const TRANSLATIONS = {
       subtext: '<i class="fas fa-map-marker-alt"></i> S.Kom &middot; Universitas Lambung Mangkurat &middot; Banjarmasin, Kalimantan Selatan',
       ctaWork: 'Lihat Detail Profil <i class="fas fa-arrow-right"></i>',
       ctaContact: 'Hubungi Saya <i class="fas fa-arrow-right"></i>',
+      cvFile: 'assets/CV_Melky_Hermansyah_ID.pdf',
+      cvFilename: 'CV_Melky_Hermansyah_ID.pdf',
+      cvDownloadText: 'Unduh CV <i class="fas fa-download"></i>',
       idRole: 'Operasional &middot; Spesialis Data',
       factExperience: 'Pengalaman',
       factRole: 'Sertifikasi',
@@ -494,7 +500,14 @@ function applyLanguage(language, savePreference = true) {
   setHtml('.hero-badge', t.hero.badge);
   setHtml('.hero-subtext', t.hero.subtext);
   setHtml('.hero-actions .btn.btn-primary', t.hero.ctaWork);
-  setHtml('.hero-actions .btn.btn-outline', t.hero.ctaContact);
+  const contactBtn = document.querySelector('.hero-actions a[href="#contact"]');
+  if (contactBtn) contactBtn.innerHTML = t.hero.ctaContact;
+  const cvBtn = document.getElementById('cvDownloadBtn') || document.querySelector('.hero-actions a[download]');
+  if (cvBtn && t.hero.cvFile) {
+    cvBtn.setAttribute('href', t.hero.cvFile);
+    cvBtn.setAttribute('download', t.hero.cvFilename || 'CV_Melky_Hermansyah.pdf');
+    cvBtn.innerHTML = t.hero.cvDownloadText;
+  }
   setHtml('.hero-id-role', t.hero.idRole);
   setText('.hero-fact-card:nth-child(1) .fact-label', t.hero.factExperience);
   setText('.hero-fact-card:nth-child(2) .fact-label', t.hero.factRole);

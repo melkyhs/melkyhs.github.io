@@ -64,9 +64,9 @@ const TRANSLATIONS = {
     about: {
       label: 'Summary',
       title: 'Professional <span class="gradient-text">Profile</span>',
-      p1: 'I am <strong>Melky Hermansyah, S.Kom.</strong>, a detail-oriented Operations & Data Specialist with a Bachelor\'s degree in Computer Science from Universitas Lambung Mangkurat.',
-      p2: 'I have a proven track record in operational inventory recording, high-accuracy field data verification with BPS (Central Bureau of Statistics), and public sector administrative management.',
-      p3: 'Skilled in Microsoft Office applications, spreadsheet reporting, and digital data entry systems under strict Standard Operating Procedures (SOP). Strong communicator experienced in multi-stakeholder coordination, prepared to execute shift-based operational support, stock tracking, and daily reconciliation reporting for site operations at PT Elnusa Petrofin.',
+      p1: 'Detail-oriented Operations & Data Specialist with a Bachelor\'s degree in Computer Science from Universitas Lambung Mangkurat.',
+      p2: 'Proven track record in operational inventory recording, high-accuracy field data verification with BPS (Central Bureau of Statistics), and public sector administrative management.',
+      p3: 'Skilled in Microsoft Office applications, spreadsheet reporting, and digital data entry systems under strict Standard Operating Procedures (SOP). Strong communicator with experience in multi-stakeholder coordination, shift-based operational support, stock tracking, and daily reconciliation reporting, adaptable to a wide range of operational, administrative, and data-focused roles.',
       eduTitle: 'Bachelor of Computer Science',
       eduOrg: 'Universitas Lambung Mangkurat \u2014 Graduation: Aug 2026',
       workTitle: 'Fluent English & Bahasa Indonesia',

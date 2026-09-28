@@ -24,13 +24,16 @@ A modern, high-performance personal portfolio website for **Melky Hermansyah, S.
   - Subtle mouse parallax and entrance reveal animations.
 - **Typographic & Visual Hierarchy:** Clear, high-contrast layouts prioritizing enterprise companies and institutions above professional roles.
 - **CV Aligned Sections:**
-  - **Hero:** Quick status, location badge, contact links, and downloadable CV PDF.
-  - **Summary:** Background overview, core expertise, and site operation support readiness.
+  - **Hero:** Quick status, location badge, direct WhatsApp/LinkedIn/GitHub/Email links, and downloadable CV PDF.
+  - **Summary:** Background overview, core expertise, and work availability readiness.
   - **Skills:** Categorized into Operations & Data, Tools & Software (MS Office Certified), and Communication.
   - **Experience:** Detailed timeline for 4 professional roles (Disbudporapar Kota Banjarmasin, BPS, UD. Borneo Ban, LPFK).
+  - **Featured Projects & Research:**
+    - Point-of-Sale (POS) & Inventory Management System (Zero discrepancy retail stock tracking).
+    - Undergraduate Thesis: Comparative Analysis of MobileNet V1, V2, and V3 in Facial Expression Classification (Transfer Learning vs. From-Scratch Training).
   - **Education:** S1 Ilmu Komputer at Universitas Lambung Mangkurat.
   - **Certifications & Achievements:** MS Junior Office Specialist, 2nd Place National English Public Speaking.
-  - **Contact:** Direct links for Email, LinkedIn, GitHub, and Phone.
+  - **Contact:** One-click "Copy to Clipboard" for Email & Phone, and direct "Chat via WhatsApp" CTA button.
 
 ---
 

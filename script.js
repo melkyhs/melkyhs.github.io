@@ -38,7 +38,8 @@ const TRANSLATIONS = {
       about: 'About',
       skills: 'Skills',
       experience: 'Experience',
-      projects: 'Education',
+      projects: 'Projects',
+      education: 'Education',
       interests: 'Certifications',
       contact: 'Contact'
     },
@@ -72,7 +73,7 @@ const TRANSLATIONS = {
       workTitle: 'Fluent English & Bahasa Indonesia',
       workOrg: 'Professional Communication Skills',
       locationTitle: 'Banjarmasin, Indonesia',
-      locationCountry: 'Indonesia'
+      locationCountry: 'Open to On-site, Hybrid, Remote & Relocation'
     },
     skills: {
       label: 'Skills',
@@ -121,13 +122,26 @@ const TRANSLATIONS = {
       ]
     },
     projects: {
+      label: 'Projects',
+      title: 'Featured <span class="gradient-text">Projects &amp; Research</span>',
+      subtitle: 'Real-world operational systems, inventory applications, and machine learning research.',
+      proj1Label: 'Operational Systems',
+      proj1Title: 'Point-of-Sale (POS) &amp; Inventory Management System',
+      proj1Desc1: 'Engineered and maintained a retail Point-of-Sale and real-time inventory tracking system for retail automotive spare parts movements.',
+      proj1Desc2: 'Implemented standardized transaction data entry procedures and monthly reconciliation logs, eliminating stock discrepancies between physical goods and system records (zero discrepancy).',
+      proj2Label: 'Undergraduate Thesis &middot; Computer Vision',
+      proj2Title: 'Comparative Analysis of MobileNet V1, V2, and V3 in Facial Expression Classification',
+      proj2Desc1: 'Scientific undergraduate thesis evaluating MobileNet deep learning architectures (V1, V2, and V3) for human facial expression classification.',
+      proj2Desc2: 'Rigorously benchmarked model accuracy, loss convergence, parameter efficiency, and inference speed comparing Transfer Learning against From-Scratch Training methodologies.'
+    },
+    education: {
       label: 'Education',
       title: 'Academic <span class="gradient-text">Background</span>',
       subtitle: 'Formal education and relevant academic coursework.',
-      projectLabel: 'Education',
-      projectTitle: 'Universitas Lambung Mangkurat',
-      projectDesc1: 'Bachelor of Computer Science (S1 Ilmu Komputer), South Kalimantan, Indonesia. Graduation: <strong>August 2026</strong>.',
-      projectDesc2: 'Relevant Coursework: Database Systems, Information Systems, Software Engineering, Data Structures, and Applied Logic.'
+      cardLabel: 'Education',
+      cardTitle: 'Universitas Lambung Mangkurat',
+      cardDesc1: 'Bachelor of Computer Science (S1 Ilmu Komputer), South Kalimantan, Indonesia. Graduation: <strong>August 2026</strong>.',
+      cardDesc2: 'Relevant Coursework: Database Systems, Information Systems, Software Engineering, Data Structures, and Applied Logic.'
     },
     interests: {
       label: 'Credentials',
@@ -146,7 +160,7 @@ const TRANSLATIONS = {
       subtitle: 'Reach me directly for professional opportunities in operations, data management, and administration.',
       pingFlag: '"available_for_collaboration"',
       pingResponse: '<span class="t-success">\u2713</span> Verified profile active. Open for collaboration and professional opportunities.',
-      cta: 'Visit Portfolio <i class="fas fa-arrow-right"></i>'
+      whatsappCta: 'Chat via WhatsApp'
     },
     footer: {
       line1: 'Designed &amp; Built by <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:sayamelkyhermansyah@gmail.com">sayamelkyhermansyah@gmail.com</a>',
@@ -169,7 +183,8 @@ const TRANSLATIONS = {
       about: 'Tentang',
       skills: 'Keahlian',
       experience: 'Pengalaman',
-      projects: 'Pendidikan',
+      projects: 'Proyek',
+      education: 'Pendidikan',
       interests: 'Sertifikasi',
       contact: 'Kontak'
     },
@@ -203,7 +218,7 @@ const TRANSLATIONS = {
       workTitle: 'Fasih Bahasa Inggris & Indonesia',
       workOrg: 'Kemampuan Komunikasi Profesional',
       locationTitle: 'Banjarmasin, Indonesia',
-      locationCountry: 'Indonesia'
+      locationCountry: 'Siap Kerja: On-site, Hybrid, Remote & Relokasi'
     },
     skills: {
       label: 'Keahlian',
@@ -252,13 +267,26 @@ const TRANSLATIONS = {
       ]
     },
     projects: {
+      label: 'Proyek',
+      title: 'Proyek &amp; <span class="gradient-text">Riset Unggulan</span>',
+      subtitle: 'Sistem operasional nyata, aplikasi manajemen inventaris, dan riset machine learning.',
+      proj1Label: 'Sistem Operasional',
+      proj1Title: 'Aplikasi Point-of-Sale (POS) &amp; Manajemen Inventaris',
+      proj1Desc1: 'Membangun dan mengelola sistem Point-of-Sale serta pelacakan inventaris real-time untuk pergerakan suku cadang ritel.',
+      proj1Desc2: 'Menerapkan standarisasi SOP entri data transaksi dan rekonsiliasi bulanan untuk meniadakan selisih antara stok fisik dan catatan sistem (zero discrepancy).',
+      proj2Label: 'Skripsi S1 &middot; Computer Vision',
+      proj2Title: 'Perbandingan Arsitektur MobileNet V1, V2, dan V3 pada Klasifikasi Ekspresi Wajah Menggunakan Metode Transfer Learning dan From Scratch Training',
+      proj2Desc1: 'Penelitian skripsi ilmiah mengevaluasi arsitektur deep learning MobileNet (V1, V2, dan V3) untuk klasifikasi ekspresi wajah manusia.',
+      proj2Desc2: 'Menganalisis perbandingan akurasi model, konvergensi loss, efisiensi parameter, serta latensi komputasi antara metode Transfer Learning dan From-Scratch Training.'
+    },
+    education: {
       label: 'Pendidikan',
       title: 'Latar Belakang <span class="gradient-text">Akademik</span>',
       subtitle: 'Pendidikan formal dan mata kuliah akademik yang relevan.',
-      projectLabel: 'Pendidikan',
-      projectTitle: 'Universitas Lambung Mangkurat',
-      projectDesc1: 'Sarjana Ilmu Komputer (S1 Ilmu Komputer), Kalimantan Selatan, Indonesia. Wisuda: <strong>Agustus 2026</strong>.',
-      projectDesc2: 'Mata Kuliah Relevan: Sistem Basis Data, Sistem Informasi, Rekayasa Perangkat Lunak, Struktur Data, dan Logika Terapan.'
+      cardLabel: 'Pendidikan',
+      cardTitle: 'Universitas Lambung Mangkurat',
+      cardDesc1: 'Sarjana Ilmu Komputer (S1 Ilmu Komputer), Kalimantan Selatan, Indonesia. Wisuda: <strong>Agustus 2026</strong>.',
+      cardDesc2: 'Mata Kuliah Relevan: Sistem Basis Data, Sistem Informasi, Rekayasa Perangkat Lunak, Struktur Data, dan Logika Terapan.'
     },
     interests: {
       label: 'Kredensial',
@@ -277,7 +305,7 @@ const TRANSLATIONS = {
       subtitle: 'Hubungi saya untuk peluang profesional di operasional, manajemen data, dan administrasi.',
       pingFlag: '"siap_berkolaborasi"',
       pingResponse: '<span class="t-success">\u2713</span> Profil terverifikasi aktif. Terbuka untuk kolaborasi dan peluang profesional.',
-      cta: 'Kunjungi Portofolio <i class="fas fa-arrow-right"></i>'
+      whatsappCta: 'Chat via WhatsApp'
     },
     footer: {
       line1: 'Dirancang &amp; Dibangun oleh <span>Melky Hermansyah</span> &middot; S.Kom &middot; <a href="mailto:sayamelkyhermansyah@gmail.com">sayamelkyhermansyah@gmail.com</a>',
@@ -494,8 +522,9 @@ function applyLanguage(language, savePreference = true) {
   setText('.nav-links li:nth-child(2) a', t.nav.skills);
   setText('.nav-links li:nth-child(3) a', t.nav.experience);
   setText('.nav-links li:nth-child(4) a', t.nav.projects);
-  setText('.nav-links li:nth-child(5) a', t.nav.interests);
-  setText('.nav-links li:nth-child(6) a', t.nav.contact);
+  setText('.nav-links li:nth-child(5) a', t.nav.education);
+  setText('.nav-links li:nth-child(6) a', t.nav.interests);
+  setText('.nav-links li:nth-child(7) a', t.nav.contact);
 
   setHtml('.hero-badge', t.hero.badge);
   setHtml('.hero-subtext', t.hero.subtext);
@@ -560,14 +589,29 @@ function applyLanguage(language, savePreference = true) {
     if (t.experience.job4Company) setText('#experience .timeline-item:nth-child(4) .timeline-company', t.experience.job4Company);
   }
 
+  // Projects
   setText('#projects .section-label', t.projects.label);
   setHtml('#projects .section-title', t.projects.title);
   setText('#projects .section-subtitle', t.projects.subtitle);
-  setText('#projects .project-label', t.projects.projectLabel);
-  setText('#projects .project-title', t.projects.projectTitle);
-  setHtml('#projects .project-desc:nth-of-type(1)', t.projects.projectDesc1);
-  setHtml('#projects .project-desc:nth-of-type(2)', t.projects.projectDesc2);
+  setText('#proj1-label', t.projects.proj1Label);
+  setText('#proj1-title', t.projects.proj1Title);
+  setHtml('#proj1-desc1', t.projects.proj1Desc1);
+  setHtml('#proj1-desc2', t.projects.proj1Desc2);
+  setText('#proj2-label', t.projects.proj2Label);
+  setText('#proj2-title', t.projects.proj2Title);
+  setHtml('#proj2-desc1', t.projects.proj2Desc1);
+  setHtml('#proj2-desc2', t.projects.proj2Desc2);
 
+  // Education
+  setText('#edu-section-label', t.education.label);
+  setHtml('#edu-section-title', t.education.title);
+  setText('#edu-section-subtitle', t.education.subtitle);
+  setText('#edu-card-label', t.education.cardLabel);
+  setText('#edu-card-title', t.education.cardTitle);
+  setHtml('#edu-card-desc1', t.education.cardDesc1);
+  setHtml('#edu-card-desc2', t.education.cardDesc2);
+
+  // Certifications
   setText('#interests .section-label', t.interests.label);
   setHtml('#interests .section-title', t.interests.title);
   setText('#interests .section-subtitle', t.interests.subtitle);
@@ -578,12 +622,14 @@ function applyLanguage(language, savePreference = true) {
   setText('#interests .interest-card:nth-child(3) h3', t.interests.card3Title);
   setText('#interests .interest-card:nth-child(3) p', t.interests.card3Desc);
 
+  // Contact
   setText('#contact .section-label', t.contact.label);
   setHtml('#contact .section-title', t.contact.title);
   setText('#contact .section-subtitle', t.contact.subtitle);
   setText('#contact .contact-ping-line .t-string', t.contact.pingFlag);
   setHtml('#contact .contact-ping-response', t.contact.pingResponse);
-  setHtml('#contact .btn.btn-primary', t.contact.cta);
+  const waBtnText = document.getElementById('whatsappBtnText');
+  if (waBtnText && t.contact.whatsappCta) waBtnText.textContent = t.contact.whatsappCta;
 
   setHtml('footer p:nth-of-type(1)', t.footer.line1);
   setHtml('footer p:nth-of-type(2)', '&copy; <span id="year"></span> ' + t.footer.rights);
@@ -718,5 +764,50 @@ if (aboutTerminal) {
 
   termObserver.observe(aboutTerminal);
 }
+
+// ===== TOAST NOTIFICATION HELPER =====
+function showToast(message) {
+  const container = document.getElementById('toastContainer');
+  if (!container) return;
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.innerHTML = `<i class="fas fa-check-circle"></i> <span>${message}</span>`;
+  container.appendChild(toast);
+  requestAnimationFrame(() => toast.classList.add('show'));
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 320);
+  }, 2200);
+}
+
+// ===== COPY TO CLIPBOARD BUTTONS =====
+document.querySelectorAll('.copy-btn').forEach(btn => {
+  btn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const text = btn.dataset.copy;
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      btn.classList.add('copied');
+      const icon = btn.querySelector('i');
+      if (icon) {
+        icon.className = 'fas fa-check';
+      }
+      const lang = document.documentElement.lang === 'id' ? 'id' : 'en';
+      const isEmail = text.includes('@');
+      const msg = lang === 'id'
+        ? (isEmail ? 'Email berhasil disalin!' : 'Nomor telepon berhasil disalin!')
+        : (isEmail ? 'Email copied to clipboard!' : 'Phone number copied to clipboard!');
+      showToast(msg);
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        if (icon) icon.className = 'far fa-copy';
+      }, 2000);
+    } catch (err) {
+      console.error('Clipboard copy failed:', err);
+    }
+  });
+});
 
 initializeLanguageSwitcher();

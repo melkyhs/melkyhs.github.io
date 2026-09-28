@@ -9,9 +9,16 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Melky Hermansyah — Operations & Data Specialist Portfolio" />
-  <meta property="og:description" content="Portfolio of Melky Hermansyah — Operations & Data Specialist, Inventory Management, Field Data Verification, and Administrative Reporting." />
+  <meta property="og:description" content="Portfolio of Melky Hermansyah — Operations & Data Specialist, Inventory Management, Field Data Verification, and Computer Science Graduate." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://melkyhs.github.io" />
+  <meta property="og:image" content="https://melkyhs.github.io/assets/photo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Melky Hermansyah — Operations & Data Specialist Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Melky Hermansyah — Operations & Data Specialist, Inventory Management, Field Data Verification, and Computer Science Graduate." />
+  <meta name="twitter:image" content="https://melkyhs.github.io/assets/photo.png" />
 
   <title>Melky Hermansyah — Operations & Data Specialist Portfolio</title>
 
@@ -39,7 +46,8 @@
       <li><a href="#about" data-section="about">About</a></li>
       <li><a href="#skills" data-section="skills">Skills</a></li>
       <li><a href="#experience" data-section="experience">Experience</a></li>
-      <li><a href="#projects" data-section="projects">Education</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#education" data-section="education">Education</a></li>
       <li><a href="#interests" data-section="interests">Certifications</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
@@ -106,14 +114,14 @@
         </div>
 
         <div class="hero-socials">
+          <a href="https://wa.me/62895701151217?text=Halo%20Melky,%20saya%20tertarik%20dengan%20profil%20Anda" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
           <a href="https://linkedin.com/in/melkyhermansyah" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/melkyhs" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
             <i class="fab fa-github"></i>
-          </a>
-          <a href="https://melkyhs.github.io" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Portfolio">
-            <i class="fas fa-globe"></i>
           </a>
           <a href="tel:+62895701151217" class="social-icon" aria-label="Phone">
             <i class="fas fa-phone"></i>
@@ -211,7 +219,7 @@
               <div class="highlight-icon"><i class="fas fa-location-dot"></i></div>
               <div class="highlight-item-text">
                 <strong>Banjarmasin, Indonesia</strong>
-                <span>Indonesia</span>
+                <span class="location-status">Open to On-site, Hybrid, Remote &amp; Relocation</span>
               </div>
             </div>
           </div>
@@ -407,20 +415,135 @@
     <div class="container">
       <div class="section-header">
         <span class="section-num-bg" aria-hidden="true">04</span>
-        <span class="section-label fade-up">Education</span>
-        <h2 class="section-title fade-up">Academic <span class="gradient-text">Background</span></h2>
-        <p class="section-subtitle fade-up">Formal education and relevant academic coursework.</p>
+        <span class="section-label fade-up">Projects</span>
+        <h2 class="section-title fade-up">Featured <span class="gradient-text">Projects &amp; Research</span></h2>
+        <p class="section-subtitle fade-up">Real-world operational systems, inventory applications, and machine learning research.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: POS & Inventory System -->
+        <div class="project-featured fade-up">
+          <div class="project-info">
+            <div class="project-label" id="proj1-label">Operational Systems</div>
+            <h3 class="project-title" id="proj1-title">Point-of-Sale (POS) &amp; Inventory Management System</h3>
+            <p class="project-desc" id="proj1-desc1">
+              Engineered and maintained a retail Point-of-Sale and real-time inventory tracking system for retail automotive spare parts movements.
+            </p>
+            <p class="project-desc" id="proj1-desc2">
+              Implemented standardized transaction data entry procedures and monthly reconciliation logs, eliminating stock discrepancies between physical goods and system records (zero discrepancy).
+            </p>
+            <div class="project-tags">
+              <span class="tag">Point-of-Sale (POS)</span>
+              <span class="tag">Inventory Management</span>
+              <span class="tag">Stock Tracking</span>
+              <span class="tag">Daily Reconciliation</span>
+              <span class="tag">Transaction Logging</span>
+              <span class="tag">Retail Operations</span>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="proj-terminal">
+              <div class="proj-term-chrome">
+                <div class="proj-term-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="proj-term-label">inventory_system.json</span>
+              </div>
+              <div class="proj-term-body">
+                <div class="proj-request-line">
+                  <span class="pt-method">GET</span>
+                  <span class="pt-path">/api/pos/inventory</span>
+                  <span class="pt-ver">HTTP/1.1</span>
+                </div>
+                <div class="proj-response-status">
+                  <span class="pt-status-code">200</span>
+                  <span class="pt-status-text">OK</span>
+                </div>
+                <pre class="proj-response-body"><span class="pt-brace">{</span>
+  <span class="pt-key">"system"</span>: <span class="pt-str">"POS &amp; Inventory Tracker"</span>,
+  <span class="pt-key">"accuracy"</span>: <span class="pt-str">"100% (Zero Discrepancy)"</span>,
+  <span class="pt-key">"modules"</span>: <span class="pt-bracket">[</span><span class="pt-str">"Stock In/Out"</span>, <span class="pt-str">"Reconciliation"</span><span class="pt-bracket">]</span>,
+  <span class="pt-key">"status"</span>: <span class="pt-str">"Production Standard"</span>
+<span class="pt-brace">}</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Undergraduate Thesis (MobileNet) -->
+        <div class="project-featured fade-up">
+          <div class="project-info">
+            <div class="project-label" id="proj2-label">Undergraduate Thesis &middot; Computer Vision</div>
+            <h3 class="project-title" id="proj2-title">Comparative Analysis of MobileNet V1, V2, and V3 in Facial Expression Classification</h3>
+            <p class="project-desc" id="proj2-desc1">
+              Scientific undergraduate thesis evaluating MobileNet deep learning architectures (V1, V2, and V3) for human facial expression classification.
+            </p>
+            <p class="project-desc" id="proj2-desc2">
+              Rigorously benchmarked model accuracy, loss convergence, parameter efficiency, and inference speed comparing Transfer Learning against From-Scratch Training methodologies.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">MobileNet V1/V2/V3</span>
+              <span class="tag">Transfer Learning</span>
+              <span class="tag">From-Scratch Training</span>
+              <span class="tag">Python &amp; TensorFlow</span>
+              <span class="tag">Model Evaluation</span>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="proj-terminal">
+              <div class="proj-term-chrome">
+                <div class="proj-term-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="proj-term-label">thesis_benchmark.json</span>
+              </div>
+              <div class="proj-term-body">
+                <div class="proj-request-line">
+                  <span class="pt-method">GET</span>
+                  <span class="pt-path">/api/thesis/benchmark</span>
+                  <span class="pt-ver">HTTP/1.1</span>
+                </div>
+                <div class="proj-response-status">
+                  <span class="pt-status-code">200</span>
+                  <span class="pt-status-text">BENCHMARK_OK</span>
+                </div>
+                <pre class="proj-response-body"><span class="pt-brace">{</span>
+  <span class="pt-key">"architectures"</span>: <span class="pt-bracket">[</span><span class="pt-str">"V1"</span>, <span class="pt-str">"V2"</span>, <span class="pt-str">"V3"</span><span class="pt-bracket">]</span>,
+  <span class="pt-key">"approaches"</span>: <span class="pt-bracket">[</span><span class="pt-str">"Transfer Learning"</span>, <span class="pt-str">"Scratch"</span><span class="pt-bracket">]</span>,
+  <span class="pt-key">"target"</span>: <span class="pt-str">"Facial Expression Classification"</span>,
+  <span class="pt-key">"metrics"</span>: <span class="pt-str">"Accuracy, Loss, Latency"</span>
+<span class="pt-brace">}</span></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num-bg" aria-hidden="true">05</span>
+        <span class="section-label fade-up" id="edu-section-label">Education</span>
+        <h2 class="section-title fade-up" id="edu-section-title">Academic <span class="gradient-text">Background</span></h2>
+        <p class="section-subtitle fade-up" id="edu-section-subtitle">Formal education and relevant academic coursework.</p>
       </div>
 
       <div class="projects-grid">
         <div class="project-featured fade-up">
           <div class="project-info">
-            <div class="project-label">Education</div>
-            <h3 class="project-title">Universitas Lambung Mangkurat</h3>
-            <p class="project-desc">
+            <div class="project-label" id="edu-card-label">Education</div>
+            <h3 class="project-title" id="edu-card-title">Universitas Lambung Mangkurat</h3>
+            <p class="project-desc" id="edu-card-desc1">
               Bachelor of Computer Science (S1 Ilmu Komputer), South Kalimantan, Indonesia. Graduation: <strong>August 2026</strong>.
             </p>
-            <p class="project-desc">
+            <p class="project-desc" id="edu-card-desc2">
               Relevant Coursework: Database Systems, Information Systems, Software Engineering, Data Structures, and Applied Logic.
             </p>
             <div class="project-tags">
@@ -469,7 +592,7 @@
   <section id="interests" class="section interests-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-num-bg" aria-hidden="true">05</span>
+        <span class="section-num-bg" aria-hidden="true">06</span>
         <span class="section-label fade-up">Credentials</span>
         <h2 class="section-title fade-up">Certifications &amp; <span class="gradient-text">Languages</span></h2>
         <p class="section-subtitle fade-up">Verified professional certifications and language proficiency.</p>
@@ -504,7 +627,7 @@
     <div class="container">
       <div class="contact-wrapper">
         <div class="section-header">
-          <span class="section-num-bg" aria-hidden="true">06</span>
+          <span class="section-num-bg" aria-hidden="true">07</span>
           <span class="section-label fade-up">Contact</span>
           <h2 class="section-title fade-up">Let’s <span class="gradient-text">Connect</span></h2>
           <p class="section-subtitle fade-up">
@@ -527,47 +650,74 @@
         </div>
 
         <div class="contact-cards fade-up">
-          <a href="mailto:sayamelkyhermansyah@gmail.com" class="contact-card">
-            <div class="contact-card-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <span class="contact-card-label">Email</span>
-            <span class="contact-card-value">sayamelkyhermansyah@gmail.com</span>
-          </a>
+          <div class="contact-card has-copy">
+            <a href="mailto:sayamelkyhermansyah@gmail.com" class="contact-card-link">
+              <div class="contact-card-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">sayamelkyhermansyah@gmail.com</span>
+            </a>
+            <button class="copy-btn" data-copy="sayamelkyhermansyah@gmail.com" aria-label="Copy Email" title="Copy to clipboard">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
 
-          <a href="https://linkedin.com/in/melkyhermansyah" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <div class="contact-card-icon">
-              <i class="fab fa-linkedin-in"></i>
-            </div>
-            <span class="contact-card-label">LinkedIn</span>
-            <span class="contact-card-value">Melky Hermansyah</span>
-          </a>
+          <div class="contact-card has-copy">
+            <a href="tel:+62895701151217" class="contact-card-link">
+              <div class="contact-card-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">+62 895-7011-51217</span>
+            </a>
+            <button class="copy-btn" data-copy="+62895701151217" aria-label="Copy Phone" title="Copy to clipboard">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
 
-          <a href="https://github.com/melkyhs" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <div class="contact-card-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <span class="contact-card-label">GitHub</span>
-            <span class="contact-card-value">github.com/melkyhs</span>
-          </a>
+          <div class="contact-card">
+            <a href="https://wa.me/62895701151217?text=Halo%20Melky,%20saya%20tertarik%20dengan%20profil%20Anda" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-card-icon whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <span class="contact-card-label">WhatsApp</span>
+              <span class="contact-card-value">+62 895-7011-51217</span>
+            </a>
+          </div>
 
-          <a href="tel:+62895701151217" class="contact-card">
-            <div class="contact-card-icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <span class="contact-card-label">Phone</span>
-            <span class="contact-card-value">+62 895-7011-51217</span>
-          </a>
+          <div class="contact-card">
+            <a href="https://linkedin.com/in/melkyhermansyah" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-card-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">Melky Hermansyah</span>
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <a href="https://github.com/melkyhs" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-card-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/melkyhs</span>
+            </a>
+          </div>
         </div>
 
-        <div class="fade-up">
-          <a href="https://melkyhs.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1rem; padding: 14px 40px;">
-            Visit Portfolio <i class="fas fa-arrow-right"></i>
+        <div class="contact-cta-wrapper fade-up">
+          <a href="https://wa.me/62895701151217?text=Halo%20Melky,%20saya%20tertarik%20dengan%20profil%20Anda" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="contactWhatsAppBtn">
+            <i class="fab fa-whatsapp"></i> <span id="whatsappBtnText">Chat via WhatsApp</span>
           </a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ===== TOAST CONTAINER ===== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
